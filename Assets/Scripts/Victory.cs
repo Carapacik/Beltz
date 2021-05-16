@@ -9,7 +9,7 @@ public class Victory : MonoBehaviour
     {
     }
 
-    public void Update()
+    private void Update()
     {
         var belts = GameObject.FindGameObjectsWithTag("belt");
         var counter = belts.Select(belt => belt.GetComponent<Swap>()).Count(c => c.isCorrect);
@@ -17,10 +17,10 @@ public class Victory : MonoBehaviour
         {
             victoryUI.SetActive(true);
             var balls = GameObject.Find("Balls").transform;
-            foreach (Transform ball in balls) ball.gameObject.GetComponent<RotateBall>().enabled = true;
-
-            
-            foreach (var belt in belts) belt.gameObject.GetComponent<Swap>().enabled = false;
+            foreach (Transform ball in balls) 
+                ball.gameObject.GetComponent<RotateBall>().enabled = true;
+            foreach (var belt in belts) 
+                belt.gameObject.GetComponent<Swap>().enabled = false;
         }
     }
 }
