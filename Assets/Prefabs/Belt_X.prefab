@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52754af9a784a8b47b20ef84feac6db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameObject: {fileID: 2227458511974768044}
-  _spriteRenderer: {fileID: 2227458511974768040}
-  _x_belt: {fileID: 21300000, guid: ec01890b4ce318342b16fd5108db9d81, type: 3}
-  _p_belt: {fileID: 21300000, guid: 3dfc33e1637fb4d4b938a89e2da30de8, type: 3}
-  _isCorrect: 0
+  belt: {fileID: 2227458511974768044}
+  spriteRenderer: {fileID: 2227458511974768040}
+  xBelt: {fileID: 21300000, guid: ec01890b4ce318342b16fd5108db9d81, type: 3}
+  pBelt: {fileID: 21300000, guid: 3dfc33e1637fb4d4b938a89e2da30de8, type: 3}
+  isCorrect: 0
