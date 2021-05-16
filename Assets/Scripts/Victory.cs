@@ -18,6 +18,9 @@ public class Victory : MonoBehaviour
             victoryUI.SetActive(true);
             var balls = GameObject.Find("Balls").transform;
             foreach (Transform ball in balls) ball.gameObject.GetComponent<RotateBall>().enabled = true;
+
+            
+            foreach (var belt in belts) belt.gameObject.GetComponent<Swap>().enabled = false;
         }
     }
 }
