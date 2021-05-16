@@ -13,7 +13,7 @@ public class Swap : MonoBehaviour
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
-    public void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {

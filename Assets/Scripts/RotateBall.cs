@@ -10,6 +10,6 @@ public class RotateBall : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(0, 0, rotation);
+        transform.Rotate(0, 0, -rotation);
     }
 }
