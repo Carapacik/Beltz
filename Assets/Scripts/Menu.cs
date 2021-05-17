@@ -1,10 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class Menu : MonoBehaviour
 {
-    [SerializeField] private string nextSceneName;
-
     private void Start()
     {
     }
@@ -18,7 +16,7 @@ public class PauseMenu : MonoBehaviour
 
             var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (hit.collider != null && hit.transform.gameObject == gameObject)
-                SceneManager.LoadScene(nextSceneName);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }

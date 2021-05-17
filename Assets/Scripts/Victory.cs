@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Victory : MonoBehaviour
 {
-    [SerializeField] private GameObject victoryUI;
+    [SerializeField] private GameObject victoryObject;
 
     private void Start()
     {
@@ -15,8 +15,8 @@ public class Victory : MonoBehaviour
         var counter = belts.Select(belt => belt.GetComponent<Swap>()).Count(c => c.isCorrect);
         if (counter == belts.Length)
         {
-            victoryUI.SetActive(true);
-            var balls = GameObject.Find("Balls").transform;
+            victoryObject.SetActive(true);
+            var balls = GameObject.Find("Shafts").transform;
             foreach (Transform ball in balls)
                 ball.gameObject.GetComponent<RotateShaft>().enabled = true;
             foreach (var belt in belts)
