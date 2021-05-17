@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
             var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null && hit.transform.gameObject == gameObject) 
+            if (hit.collider != null && hit.transform.gameObject == gameObject)
                 SceneManager.LoadScene(nextSceneName);
         }
     }

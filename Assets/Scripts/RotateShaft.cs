@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class RotateBall : MonoBehaviour
+public class RotateShaft : MonoBehaviour
 {
     [SerializeField] private float rotation;
 
