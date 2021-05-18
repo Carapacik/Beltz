@@ -1,22 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    // Start is called before the first frame update
     private void Start()
     {
+        var randNumber = Random.Range(1, 5);
+        var bg = Resources.Load($"Prefabs/BG/BG{randNumber}");
+        Instantiate(bg);
     }
 
+    // Update is called once per frame
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            var mousePos2D = new Vector2(mousePos.x, mousePos.y);
-
-            var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null && hit.transform.gameObject == gameObject)
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
     }
 }
