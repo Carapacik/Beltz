@@ -3,9 +3,13 @@ using UnityEngine;
 public class Swap : MonoBehaviour
 {
     [SerializeField] private GameObject belt;
+
     [SerializeField] private SpriteRenderer spriteRenderer;
+
     [SerializeField] private Sprite xBelt;
+
     [SerializeField] private Sprite pBelt;
+
     [SerializeField] public bool isCorrect;
 
     private void Start()
@@ -25,6 +29,7 @@ public class Swap : MonoBehaviour
             {
                 isCorrect ^= true;
                 ChangeSprite(spriteRenderer.sprite == xBelt ? pBelt : xBelt);
+                PlaySwitchSound();
             }
         }
     }
@@ -32,5 +37,11 @@ public class Swap : MonoBehaviour
     private void ChangeSprite(Sprite sprite)
     {
         spriteRenderer.sprite = sprite;
+    }
+
+    private void PlaySwitchSound()
+    {
+        if (PlayerPrefs.GetString("music") != "No")
+            GetComponent<AudioSource>().Play();
     }
 }
