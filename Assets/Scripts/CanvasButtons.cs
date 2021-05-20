@@ -15,19 +15,7 @@ public class CanvasButtons : MonoBehaviour
     {
     }
 
-    public void SoundSwitch()
-    {
-        if (PlayerPrefs.GetString("Sound") == "ON")
-        {
-            PlayerPrefs.SetString("Sound", "OFF");
-            soundIcon.SetActive(true);
-        }
-        else
-        {
-            PlayerPrefs.SetString("Sound", "ON");
-            soundIcon.SetActive(false);
-        }
-    }
+
 
     public void NextScene()
     {
@@ -58,7 +46,34 @@ public class CanvasButtons : MonoBehaviour
         PlayClickSound();
         SceneManager.LoadScene("LevelMenu");
     }
-
+    public void PlaySound()
+    {
+        if (PlayerPrefs.GetString("Sound") == "ON")
+        {
+            PlayerPrefs.SetString("Sound", "OFF");
+            soundIcon.SetActive(true);
+        }
+        else
+        {
+            PlayerPrefs.SetString("Sound", "ON");
+            soundIcon.SetActive(false);
+        }
+    }
+    
+    public void PlayMusic()
+    {
+        if (PlayerPrefs.GetString("Music") == "ON")
+        {
+            PlayerPrefs.SetString("Music", "OFF");
+            soundIcon.SetActive(true);
+        }
+        else
+        {
+            PlayerPrefs.SetString("Music", "ON");
+            soundIcon.SetActive(false);
+        }
+    }
+    
     private void PlayClickSound()
     {
         if (PlayerPrefs.GetString("Sound") != "OFF")
