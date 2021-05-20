@@ -6,6 +6,7 @@ TagManager:
   tags:
   - belt
   - victory
+  - LevelName
   layers:
   - Default
   - TransparentFX
