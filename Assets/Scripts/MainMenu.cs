@@ -6,8 +6,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        var randNumber = Random.Range(1, 7);
-        var bg = Resources.Load<GameObject>($"Prefabs/BG/BG{randNumber}").transform;
+        var bg = Resources.Load<GameObject>($"Prefabs/BG/BG{Random.Range(1, 7)}").transform;
         Instantiate(bg, new Vector3(0, 0, 90), Quaternion.identity).SetParent(parent.transform);
     }
 

@@ -1,14 +1,14 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CanvasButtons : MonoBehaviour
 {
-    public GameObject setting;
-    public GameObject soundIcon;
+    [SerializeField] private GameObject setting;
+    [SerializeField] private GameObject soundIcon;
+
     private void Start()
     {
-
     }
 
     private void Update()
@@ -17,44 +17,51 @@ public class CanvasButtons : MonoBehaviour
 
     public void SoundSwitch()
     {
-        
-        if(PlayerPrefs.GetString("sound") == "on")
+        if (PlayerPrefs.GetString("Sound") == "ON")
         {
-            PlayerPrefs.SetString("sound", "off");
+            PlayerPrefs.SetString("Sound", "OFF");
             soundIcon.SetActive(true);
-        } else
+        }
+        else
         {
-            PlayerPrefs.SetString("sound", "on");
+            PlayerPrefs.SetString("Sound", "ON");
             soundIcon.SetActive(false);
         }
     }
 
     public void NextScene()
     {
-        PlaySound();
+        PlayClickSound();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void ChooseLevel()
+    {
+        PlayClickSound();
+        SceneManager.LoadScene($"Lvl{GameObject.FindWithTag("LevelName").GetComponent<Text>().text}");
     }
 
     public void OpenSetting()
     {
+        PlayClickSound();
         setting.SetActive(true);
-        PlaySound();
     }
 
     public void CloseSettings()
     {
+        PlayClickSound();
         setting.SetActive(false);
-        PlaySound();
     }
 
     public void LevelMenu()
     {
-        PlaySound();
+        PlayClickSound();
         SceneManager.LoadScene("LevelMenu");
     }
-    private void PlaySound()
+
+    private void PlayClickSound()
     {
-        if (PlayerPrefs.GetString("sound") != "off")
+        if (PlayerPrefs.GetString("Sound") != "OFF")
             GetComponent<AudioSource>().Play();
     }
 }
