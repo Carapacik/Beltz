@@ -4,18 +4,18 @@ using UnityEngine.UI;
 
 public class CanvasButtons : MonoBehaviour
 {
-    [SerializeField] private GameObject setting;
-    [SerializeField] private GameObject soundIcon;
+    [SerializeField] private Sprite soundOn;
+    [SerializeField] private Sprite soundOff;
+    [SerializeField] private Sprite musicOn;
+    [SerializeField] private Sprite musicOff;
 
     private void Start()
     {
+        if (PlayerPrefs.GetString("Sound") == "OFF" && gameObject.name == "SoundButton")
+            GetComponent<Image>().sprite = soundOff;
+        if (PlayerPrefs.GetString("Music") == "OFF" && gameObject.name == "MusicButton")
+            GetComponent<Image>().sprite = musicOff;
     }
-
-    private void Update()
-    {
-    }
-
-
 
     public void NextScene()
     {
@@ -29,52 +29,41 @@ public class CanvasButtons : MonoBehaviour
         SceneManager.LoadScene($"Lvl{GameObject.FindWithTag("LevelName").GetComponent<Text>().text}");
     }
 
-    public void OpenSetting()
-    {
-        PlayClickSound();
-        setting.SetActive(true);
-    }
-
-    public void CloseSettings()
-    {
-        PlayClickSound();
-        setting.SetActive(false);
-    }
-
     public void LevelMenu()
     {
         PlayClickSound();
         SceneManager.LoadScene("LevelMenu");
     }
-    public void PlaySound()
+
+    public void SwitchSound()
     {
         if (PlayerPrefs.GetString("Sound") == "ON")
         {
             PlayerPrefs.SetString("Sound", "OFF");
-            soundIcon.SetActive(true);
+            GetComponent<Image>().sprite = soundOff;
         }
         else
         {
             PlayerPrefs.SetString("Sound", "ON");
-            soundIcon.SetActive(false);
+            GetComponent<Image>().sprite = soundOn;
         }
     }
-    
-    public void PlayMusic()
+
+    public void SwitchMusic()
     {
         if (PlayerPrefs.GetString("Music") == "ON")
         {
             PlayerPrefs.SetString("Music", "OFF");
-            soundIcon.SetActive(true);
+            GetComponent<Image>().sprite = musicOff;
         }
         else
         {
             PlayerPrefs.SetString("Music", "ON");
-            soundIcon.SetActive(false);
+            GetComponent<Image>().sprite = musicOn;
         }
     }
-    
-    private void PlayClickSound()
+
+    public void PlayClickSound()
     {
         if (PlayerPrefs.GetString("Sound") != "OFF")
             GetComponent<AudioSource>().Play();
