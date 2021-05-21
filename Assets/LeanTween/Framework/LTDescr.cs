@@ -1782,9 +1782,9 @@ public class LTDescr
     {
         val = ratioPassed * 2f;
         if (val < 1f)
-            return new Vector3(LeanTween.easeInBounce(0, diff.x, val) * 0.5f + @from.x,
-                LeanTween.easeInBounce(0, diff.y, val) * 0.5f + @from.y,
-                LeanTween.easeInBounce(0, diff.z, val) * 0.5f + @from.z);
+            return new Vector3(LeanTween.easeInBounce(0, diff.x, val) * 0.5f + from.x,
+                LeanTween.easeInBounce(0, diff.y, val) * 0.5f + from.y,
+                LeanTween.easeInBounce(0, diff.z, val) * 0.5f + from.z);
         val = val - 1f;
         return new Vector3(LeanTween.easeOutBounce(0, diff.x, val) * 0.5f + diffDiv2.x + from.x,
             LeanTween.easeOutBounce(0, diff.y, val) * 0.5f + diffDiv2.y + from.y,

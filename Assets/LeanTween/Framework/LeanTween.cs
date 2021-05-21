@@ -3540,13 +3540,13 @@ public class LTBezier
  */
 public class LTBezierPath
 {
-    private LTBezier[] beziers;
     private readonly int currentBezier = 0;
-    private int previousBezier;
+    private LTBezier[] beziers;
     public float length;
     private float[] lengthRatio;
     public bool orientToPath;
     public bool orientToPath2d;
+    private int previousBezier;
     public Vector3[] pts;
 
     public LTBezierPath()
