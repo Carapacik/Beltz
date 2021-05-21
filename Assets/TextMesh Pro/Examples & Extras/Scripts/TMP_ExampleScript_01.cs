@@ -1,28 +1,27 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using System.Collections;
-using TMPro;
-
 
 namespace TMPro.Examples
 {
-
     public class TMP_ExampleScript_01 : MonoBehaviour
     {
-        public enum objectType { TextMeshPro = 0, TextMeshProUGUI = 1 };
-
-        public objectType ObjectType;
-        public bool isStatic;
-
-        private TMP_Text m_text;
+        public enum objectType
+        {
+            TextMeshPro = 0,
+            TextMeshProUGUI = 1
+        }
 
         //private TMP_InputField m_inputfield;
 
 
         private const string k_label = "The count is <#0080ff>{0}</color>";
+
+        public objectType ObjectType;
+        public bool isStatic;
         private int count;
 
-        void Awake()
+        private TMP_Text m_text;
+
+        private void Awake()
         {
             // Get a reference to the TMP text component if one already exists otherwise add one.
             // This example show the convenience of having both TMP components derive from TMP_Text. 
@@ -44,14 +43,14 @@ namespace TMPro.Examples
             m_text.text = "A <#0080ff>simple</color> line of text.";
 
             // Get the preferred width and height based on the supplied width and height as opposed to the actual size of the current text container.
-            Vector2 size = m_text.GetPreferredValues(Mathf.Infinity, Mathf.Infinity);
+            var size = m_text.GetPreferredValues(Mathf.Infinity, Mathf.Infinity);
 
             // Set the size of the RectTransform based on the new calculated values.
             m_text.rectTransform.sizeDelta = new Vector2(size.x, size.y);
         }
 
 
-        void Update()
+        private void Update()
         {
             if (!isStatic)
             {
@@ -59,6 +58,5 @@ namespace TMPro.Examples
                 count += 1;
             }
         }
-
     }
 }
