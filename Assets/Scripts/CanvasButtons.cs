@@ -23,10 +23,10 @@ public class CanvasButtons : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    public void ChooseLevel()
+    public void ChooseLevel(int number)
     {
         PlayClickSound();
-        SceneManager.LoadScene($"Lvl{GameObject.FindWithTag("LevelName").GetComponent<Text>().text}");
+        SceneManager.LoadScene($"Lvl{number}");
     }
 
     public void LevelMenu()

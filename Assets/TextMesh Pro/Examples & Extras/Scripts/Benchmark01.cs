@@ -91,7 +91,7 @@ namespace TMPro.Examples
                 }
                 else if (BenchmarkType == 1)
                 {
-                    m_textMesh.text = label02 + (i % 1000);
+                    m_textMesh.text = label02 + i % 1000;
                 }
 
                 yield return null;

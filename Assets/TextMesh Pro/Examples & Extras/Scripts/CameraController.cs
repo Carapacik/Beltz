@@ -88,15 +88,11 @@ namespace TMPro.Examples
             if (CameraTarget != null)
             {
                 if (CameraMode == CameraModes.Isometric)
-                {
                     desiredPosition = CameraTarget.position + Quaternion.Euler(ElevationAngle, OrbitalAngle, 0f) *
                         new Vector3(0, 0, -FollowDistance);
-                }
                 else if (CameraMode == CameraModes.Follow)
-                {
                     desiredPosition = CameraTarget.position + CameraTarget.TransformDirection(
                         Quaternion.Euler(ElevationAngle, OrbitalAngle, 0f) * new Vector3(0, 0, -FollowDistance));
-                }
 
                 if (MovementSmoothing)
                     // Using Smoothing

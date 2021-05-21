@@ -11,6 +11,8 @@ public class PathSplineEndless : MonoBehaviour
     public GameObject[] trees;
 
     public float randomIterWidth = 0.1f;
+    private readonly int trackMaxItems = 15;
+    private readonly List<Vector3> trackPts = new List<Vector3>();
     private float carAdd;
     private float carIter;
     private int cubesIter;
@@ -19,8 +21,6 @@ public class PathSplineEndless : MonoBehaviour
 
     private LTSpline track;
     private int trackIter = 1;
-    private readonly int trackMaxItems = 15;
-    private readonly List<Vector3> trackPts = new List<Vector3>();
     private int treesIter;
     private int zIter;
 

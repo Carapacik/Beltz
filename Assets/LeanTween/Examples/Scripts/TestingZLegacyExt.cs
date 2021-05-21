@@ -22,7 +22,6 @@ public class TestingZLegacyExt : MonoBehaviour
     public Transform pt4;
     public Transform pt5;
     public bool useEstimatedTime = true;
-    private int descrTimeScaleChangeId;
 
     private readonly string[] exampleFunctions =
     {
@@ -30,6 +29,8 @@ public class TestingZLegacyExt : MonoBehaviour
         "moveExample", "rotateExample", "scaleExample", "updateValueExample", "delayedCallExample", "alphaExample",
         "moveLocalExample", "rotateAroundExample", "colorExample"
     };
+
+    private int descrTimeScaleChangeId;
 
     private int exampleIter;
     private Transform ltLogo;
