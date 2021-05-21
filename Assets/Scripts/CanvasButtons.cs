@@ -55,11 +55,13 @@ public class CanvasButtons : MonoBehaviour
         {
             PlayerPrefs.SetString("Music", "OFF");
             GetComponent<Image>().sprite = musicOff;
+            GameObject.Find("MainTheme").GetComponent<AudioSource>().enabled = false;
         }
         else
         {
             PlayerPrefs.SetString("Music", "ON");
             GetComponent<Image>().sprite = musicOn;
+            GameObject.Find("MainTheme").GetComponent<AudioSource>().enabled = true;
         }
     }
 
