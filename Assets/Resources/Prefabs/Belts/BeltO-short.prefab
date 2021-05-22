@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 5583853182712132406}
   - component: {fileID: 2754416858241049957}
   m_Layer: 0
-  m_Name: BeltP-short
-  m_TagString: Untagged
+  m_Name: BeltO-short
+  m_TagString: Belt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
