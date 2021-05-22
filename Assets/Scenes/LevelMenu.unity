@@ -477,6 +477,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 724833838}
     m_Modifications:
+    - target: {fileID: 839062240858990355, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 839062241208892971, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_TagString
+      value: LevelItem
+      objectReference: {fileID: 0}
     - target: {fileID: 839062241208892980, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 7
@@ -577,9 +585,17 @@ PrefabInstance:
       propertyPath: m_text
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 839062242350205480, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_TagString
+      value: LevelItem
+      objectReference: {fileID: 0}
     - target: {fileID: 839062242350205492, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 839062242475725635, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
@@ -593,6 +609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724833838}
   - component: {fileID: 724833839}
+  - component: {fileID: 724833840}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -651,6 +668,18 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &724833840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724833837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb9d6db4aedfb542bb801db596dce8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &746328846 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 839062241653658798, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
@@ -1604,6 +1633,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 724833838}
     m_Modifications:
+    - target: {fileID: 839062241208892971, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 839062241653658798, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1691,6 +1724,14 @@ PrefabInstance:
     - target: {fileID: 839062241653658799, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
       propertyPath: m_Name
       value: LevelItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 839062242209168052, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_text
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 839062242209168052, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
+      propertyPath: m_fontSize
+      value: 114.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbbfa17e7a4cb9549bfc76dfacb1e026, type: 3}
