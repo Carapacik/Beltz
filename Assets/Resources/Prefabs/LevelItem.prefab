@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 839062240858990354}
   - component: {fileID: 839062240858990364}
   - component: {fileID: 839062240858990365}
-  - component: {fileID: 839062240858990367}
   m_Layer: 5
   m_Name: ItemBG
   m_TagString: Untagged
@@ -76,22 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &839062240858990367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839062240858990355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20e4eb4b2fbcbf243bf13d3bb66455ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOn: {fileID: 0}
-  soundOff: {fileID: 0}
-  musicOn: {fileID: 0}
-  musicOff: {fileID: 0}
 --- !u!1 &839062241208892971
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +187,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!82 &839062241208892983
 AudioSource:
   m_ObjectHideFlags: 0
@@ -214,9 +198,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -717,6 +701,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!82 &839062242350205482
 AudioSource:
   m_ObjectHideFlags: 0
@@ -727,9 +712,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -189,6 +189,7 @@ MonoBehaviour:
   soundOff: {fileID: 21300000, guid: 305aa346b20213348ac47c748271d9b9, type: 3}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorSound: {fileID: 0}
 --- !u!82 &8117403849813009430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -199,9 +200,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -447,6 +448,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 21300000, guid: e8b6c731bf1fd884fa76c628231496cb, type: 3}
   musicOff: {fileID: 21300000, guid: 8c0879940a80a6145a3c536f512ce1b2, type: 3}
+  errorSound: {fileID: 0}
 --- !u!82 &8117403850129204426
 AudioSource:
   m_ObjectHideFlags: 0
@@ -457,9 +459,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -578,7 +580,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 700, y: 260}
+  m_SizeDelta: {x: 700, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8117403850482772867
 CanvasRenderer:
@@ -780,6 +782,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorSound: {fileID: 0}
 --- !u!82 &8117403851181778732
 AudioSource:
   m_ObjectHideFlags: 0
@@ -790,9 +793,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.4
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -911,8 +914,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -821.28}
-  m_SizeDelta: {x: 0, y: 1642.56}
+  m_AnchoredPosition: {x: 0, y: -1000}
+  m_SizeDelta: {x: 0, y: 2000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8117403851224975291
 CanvasRenderer:
@@ -980,7 +983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8117403851225307906
 RectTransform:
   m_ObjectHideFlags: 0

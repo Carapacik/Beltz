@@ -371,6 +371,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorSound: {fileID: 0}
 --- !u!82 &941793019193676296
 AudioSource:
   m_ObjectHideFlags: 0
@@ -381,9 +382,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2ccff97ab49d346479ff0ad3e99bc288, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 57c06186d626e13419df46612524881b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
