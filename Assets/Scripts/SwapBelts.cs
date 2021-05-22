@@ -28,7 +28,7 @@ public class SwapBelts : MonoBehaviour
             }
         }
     }
-    
+
     private void ChangeSprite(Sprite sprite)
     {
         _spriteRenderer.sprite = sprite;
