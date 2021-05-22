@@ -828,6 +828,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+--- !u!1 &850364877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8380573972775321545, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
+  m_PrefabInstance: {fileID: 1284380073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &850364881 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8380573972775321557, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
+  m_PrefabInstance: {fileID: 1284380073}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &951026426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1568,9 +1578,17 @@ PrefabInstance:
       value: BeltO
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321558, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
+      propertyPath: belt
+      value: 
+      objectReference: {fileID: 850364877}
+    - target: {fileID: 8380573972775321558, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: isCorrect
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8380573972775321558, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
+      propertyPath: spriteRenderer
+      value: 
+      objectReference: {fileID: 850364881}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
 --- !u!1 &1638168085
