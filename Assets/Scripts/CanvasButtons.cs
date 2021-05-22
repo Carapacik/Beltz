@@ -17,6 +17,15 @@ public class CanvasButtons : MonoBehaviour
             GetComponent<Image>().sprite = musicOff;
     }
 
+    public void Play()
+    {
+        var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
+        if (lastLvl != 0)
+            ChooseLevel(lastLvl);
+        else
+            NextScene();
+    }
+
     public void NextScene()
     {
         PlayClickSound();
@@ -46,6 +55,7 @@ public class CanvasButtons : MonoBehaviour
         {
             PlayerPrefs.SetString("Sound", "ON");
             GetComponent<Image>().sprite = soundOn;
+            PlayClickSound();
         }
     }
 
