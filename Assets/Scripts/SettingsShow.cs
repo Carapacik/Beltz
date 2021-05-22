@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SettingsScript : MonoBehaviour
+public class SettingsShow : MonoBehaviour
 {
     [SerializeField] private Transform box;
     [SerializeField] private CanvasGroup background;

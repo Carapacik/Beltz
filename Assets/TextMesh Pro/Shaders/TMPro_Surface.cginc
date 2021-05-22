@@ -61,25 +61,28 @@ void PixShader(Input input, inout SurfaceOutput o)
     faceColor.rgb /= max(faceColor.a, 0.0001);
 
     #if BEVEL_ON
-	float3 delta = float3(1.0 / _TextureWidth, 1.0 / _TextureHeight, 0.0);
+    float3 delta = float3(1.0 / _TextureWidth, 1.0 / _TextureHeight, 0.0);
 
-	float4 smp4x = {tex2D(_MainTex, input.uv_MainTex - delta.xz).a,
-					tex2D(_MainTex, input.uv_MainTex + delta.xz).a,
-					tex2D(_MainTex, input.uv_MainTex - delta.zy).a,
-					tex2D(_MainTex, input.uv_MainTex + delta.zy).a };
+    float4 smp4x = {
+        tex2D(_MainTex, input.uv_MainTex - delta.xz).a,
+        tex2D(_MainTex, input.uv_MainTex + delta.xz).a,
+        tex2D(_MainTex, input.uv_MainTex - delta.zy).a,
+        tex2D(_MainTex, input.uv_MainTex + delta.zy).a
+    };
 
-	// Face Normal
-	float3 n = GetSurfaceNormal(smp4x, input.param.x);
+    // Face Normal
+    float3 n = GetSurfaceNormal(smp4x, input.param.x);
 
-	// Bumpmap
-	float3 bump = UnpackNormal(tex2D(_BumpMap, input.uv2_FaceTex.xy)).xyz;
-	bump *= lerp(_BumpFace, _BumpOutline, saturate(sd + outline * 0.5));
-	bump = lerp(float3(0, 0, 1), bump, faceColor.a);
-	n = normalize(n - bump);
+    // Bumpmap
+    float3 bump = UnpackNormal(tex2D(_BumpMap, input.uv2_FaceTex.xy)).xyz;
+    bump *= lerp(_BumpFace, _BumpOutline, saturate(sd + outline * 0.5));
+    bump = lerp(float3(0, 0, 1), bump, faceColor.a);
+    n = normalize(n - bump);
 
-	// Cubemap reflection
-	fixed4 reflcol = texCUBE(_Cube, reflect(input.viewDirEnv, mul((float3x3)unity_ObjectToWorld, n)));
-	float3 emission = reflcol.rgb * lerp(_ReflectFaceColor.rgb, _ReflectOutlineColor.rgb, saturate(sd + outline * 0.5)) * faceColor.a;
+    // Cubemap reflection
+    fixed4 reflcol = texCUBE(_Cube, reflect(input.viewDirEnv, mul((float3x3)unity_ObjectToWorld, n)));
+    float3 emission = reflcol.rgb * lerp(_ReflectFaceColor.rgb, _ReflectOutlineColor.rgb, saturate(sd + outline * 0.5))
+        * faceColor.a;
     #else
     float3 n = float3(0, 0, -1);
     float3 emission = float3(0, 0, 0);
