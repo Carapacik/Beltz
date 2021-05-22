@@ -23,10 +23,15 @@ public class SwapBelts : MonoBehaviour
             if (hit.collider != null && hit.transform.gameObject == gameObject)
             {
                 isCorrect ^= true;
-                _spriteRenderer.sprite = _spriteRenderer == beltX ? beltO : beltX;
+                ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
                 PlaySwitchSound();
             }
         }
+    }
+    
+    private void ChangeSprite(Sprite sprite)
+    {
+        _spriteRenderer.sprite = sprite;
     }
 
     private void PlaySwitchSound()
