@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BackgroundAuto : MonoBehaviour
+public class BackgroundChoose : MonoBehaviour
 {
     [SerializeField] private GameObject parentCanvas;
     [SerializeField] private int backgroundNumber;

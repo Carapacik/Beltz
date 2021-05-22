@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 839062241208892983}
   m_Layer: 5
   m_Name: Item1
-  m_TagString: Untagged
+  m_TagString: LevelItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -619,7 +619,7 @@ GameObject:
   - component: {fileID: 839062242350205482}
   m_Layer: 5
   m_Name: Item2
-  m_TagString: Untagged
+  m_TagString: LevelItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

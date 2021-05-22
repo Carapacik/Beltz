@@ -21,21 +21,38 @@ public class CanvasButtons : MonoBehaviour
     {
         var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
         if (lastLvl != 0)
+        {
             ChooseLevel(lastLvl);
+        }
         else
-            NextScene();
+        {
+            PlayClickSound();
+            LoadLvl1();
+        }
     }
 
-    public void NextScene()
+    private static void LoadLvl1()
     {
-        PlayClickSound();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Lvl1");
     }
 
     public void ChooseLevel(int number)
     {
-        PlayClickSound();
-        SceneManager.LoadScene($"Lvl{number}");
+        var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
+        if (number <= lastLvl)
+        {
+            PlayClickSound();
+            SceneManager.LoadScene($"Lvl{number}");
+        }
+        else if (lastLvl == 0)
+        {
+            PlayClickSound();
+            LoadLvl1();
+        }
+        else
+        {
+            PlayUnavailableSound();
+        }
     }
 
     public void LevelMenu()
@@ -79,5 +96,12 @@ public class CanvasButtons : MonoBehaviour
     {
         if (PlayerPrefs.GetString("Sound") != "OFF")
             GetComponent<AudioSource>().Play();
+    }
+
+    private void PlayUnavailableSound()
+    {
+        if (PlayerPrefs.GetString("Sound") != "OFF")
+        {
+        }
     }
 }

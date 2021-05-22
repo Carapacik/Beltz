@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-public class Victory : MonoBehaviour
+public class VictoryController : MonoBehaviour
 {
     [SerializeField] private GameObject victoryObject;
     [SerializeField] private int currentLvl;
@@ -22,7 +22,11 @@ public class Victory : MonoBehaviour
                 belt.gameObject.GetComponent<SwapBelts>().enabled = false;
 
             var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
-            if (currentLvl > lastLvl) PlayerPrefs.SetInt("LastCompletedLevel", currentLvl);
+            if (currentLvl > lastLvl)
+            {
+                PlayerPrefs.SetInt("LastCompletedLevel", currentLvl);
+                PlayerPrefs.Save();
+            }
         }
     }
 }
