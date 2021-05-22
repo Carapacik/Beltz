@@ -8,6 +8,7 @@ public class CanvasButtons : MonoBehaviour
     [SerializeField] private Sprite soundOff;
     [SerializeField] private Sprite musicOn;
     [SerializeField] private Sprite musicOff;
+    [SerializeField] private AudioClip errorSound;
 
     private void Start()
     {
@@ -15,43 +16,25 @@ public class CanvasButtons : MonoBehaviour
             GetComponent<Image>().sprite = soundOff;
         if (PlayerPrefs.GetString("Music") == "OFF" && gameObject.name == "MusicButton")
             GetComponent<Image>().sprite = musicOff;
+        if (PlayerPrefs.GetInt("LastCompletedLevel") == 0) PlayerPrefs.SetInt("LastCompletedLevel", 1);
+        PlayerPrefs.Save();
     }
 
     public void Play()
     {
-        var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
-        if (lastLvl != 0)
-        {
-            ChooseLevel(lastLvl);
-        }
-        else
-        {
-            PlayClickSound();
-            LoadLvl1();
-        }
-    }
-
-    private static void LoadLvl1()
-    {
-        SceneManager.LoadScene("Lvl1");
+        ChooseLevel(PlayerPrefs.GetInt("LastCompletedLevel"));
     }
 
     public void ChooseLevel(int number)
     {
-        var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
-        if (number <= lastLvl)
+        if (number > PlayerPrefs.GetInt("LastCompletedLevel") + 1)
         {
-            PlayClickSound();
-            SceneManager.LoadScene($"Lvl{number}");
-        }
-        else if (lastLvl == 0)
-        {
-            PlayClickSound();
-            LoadLvl1();
+            PlayErrorSound();
         }
         else
         {
-            PlayUnavailableSound();
+            PlayClickSound();
+            SceneManager.LoadScene($"Lvl{number}");
         }
     }
 
@@ -98,10 +81,10 @@ public class CanvasButtons : MonoBehaviour
             GetComponent<AudioSource>().Play();
     }
 
-    private void PlayUnavailableSound()
+    private void PlayErrorSound()
     {
-        if (PlayerPrefs.GetString("Sound") != "OFF")
-        {
-        }
+        GetComponent<AudioSource>().clip = errorSound;
+        if (PlayerPrefs.GetString("Sound") != "OFF") 
+            GetComponent<AudioSource>().Play();
     }
 }
