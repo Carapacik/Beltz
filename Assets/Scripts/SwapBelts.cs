@@ -1,21 +1,26 @@
 using UnityEngine;
+using Debug = System.Diagnostics.Debug;
 
 public class SwapBelts : MonoBehaviour
 {
     [SerializeField] private Sprite beltX;
     [SerializeField] private Sprite beltO;
     [SerializeField] public bool isCorrect;
+    private Animator _animator;
     private SpriteRenderer _spriteRenderer;
+    private static readonly int Swap = Animator.StringToHash("Swap");
 
     private void Start()
     {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        _animator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Assert(Camera.main != null, "Camera.main not null");
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
@@ -23,8 +28,9 @@ public class SwapBelts : MonoBehaviour
             if (hit.collider != null && hit.transform.gameObject == gameObject)
             {
                 isCorrect ^= true;
-                ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
                 PlaySwitchSound();
+                ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
+                _animator.SetTrigger(Swap);
             }
         }
     }

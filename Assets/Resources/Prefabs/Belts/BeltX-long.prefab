@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 947142049357925697}
   - component: {fileID: 7546371591815045587}
   - component: {fileID: 7243714093390093421}
+  - component: {fileID: 3838894607499435060}
   m_Layer: 0
   m_Name: BeltX-long
   m_TagString: Belt
@@ -222,3 +223,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &3838894607499435060
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8694768707086497811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 814712b148c9b9e4493f40b02a3e1f0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
