@@ -13,7 +13,7 @@ public class Levels : MonoBehaviour
             var lvlName = item.transform.GetChild(1);
             if (lastLvl < int.Parse(lvlName.transform.GetComponent<TextMeshProUGUI>().text))
             {
-                item.transform.GetChild(0).transform.GetComponent<Image>().color = new Color(0, 0, 0, (float) 0.4);
+                item.transform.GetChild(0).transform.GetComponent<Image>().color = new Color(0, 0, 0, 0.4f);
                 lvlName.gameObject.SetActive(false);
             }
         }
