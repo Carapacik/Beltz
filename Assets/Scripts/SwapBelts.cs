@@ -8,7 +8,6 @@ public class SwapBelts : MonoBehaviour
     [SerializeField] public bool isCorrect;
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
-    private static readonly int Swap = Animator.StringToHash("Swap");
 
     private void Start()
     {
@@ -30,7 +29,7 @@ public class SwapBelts : MonoBehaviour
                 isCorrect ^= true;
                 PlaySwitchSound();
                 ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
-                _animator.SetTrigger(Swap);
+                _animator.SetTrigger("Swap");
             }
         }
     }

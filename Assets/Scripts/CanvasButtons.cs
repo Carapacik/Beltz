@@ -12,10 +12,16 @@ public class CanvasButtons : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.GetString("Sound") == "OFF" && gameObject.name == "SoundButton")
+        var sound = PlayerPrefs.GetString("Sound");
+        if (sound == "") PlayerPrefs.SetString("Sound", "ON");
+        if (sound == "OFF" && sound != "" && gameObject.name == "SoundButton")
             GetComponent<Image>().sprite = soundOff;
-        if (PlayerPrefs.GetString("Music") == "OFF" && gameObject.name == "MusicButton")
+
+        var music = PlayerPrefs.GetString("Music");
+        if (music == "") PlayerPrefs.SetString("Music", "ON");
+        if (music == "OFF" && gameObject.name == "MusicButton")
             GetComponent<Image>().sprite = musicOff;
+
         if (PlayerPrefs.GetInt("LastCompletedLevel") == 0) PlayerPrefs.SetInt("LastCompletedLevel", 1);
         PlayerPrefs.Save();
     }
