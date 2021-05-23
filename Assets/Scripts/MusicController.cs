@@ -16,7 +16,7 @@ public class MusicController : MonoBehaviour
         else
         {
             _music = this;
-            DontDestroyOnLoad(transform.gameObject);
+            transform.gameObject.DontDestroyOnLoad();
         }
     }
 }
