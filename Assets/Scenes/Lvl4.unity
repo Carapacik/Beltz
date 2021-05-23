@@ -414,7 +414,7 @@ Transform:
   m_GameObject: {fileID: 98218501}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 228, y: -253, z: -1}
-  m_LocalScale: {x: 9.12, y: 9.12, z: 0}
+  m_LocalScale: {x: 9, y: 9, z: 0}
   m_Children: []
   m_Father: {fileID: 524951543}
   m_RootOrder: 3
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624a1a64ed0f9164b81ac2a7ecf2975d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: -1.3
+  rotation: -1.8
 --- !u!212 &98218504
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1339,8 +1339,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965046263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -249, y: 265, z: -1}
-  m_LocalScale: {x: 9.12, y: 9.12, z: 0}
+  m_LocalPosition: {x: -253, y: 267, z: -1}
+  m_LocalScale: {x: 9, y: 9.12, z: 0}
   m_Children: []
   m_Father: {fileID: 524951543}
   m_RootOrder: 0
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624a1a64ed0f9164b81ac2a7ecf2975d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: -1.3
+  rotation: -1.8
 --- !u!212 &965046266
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1719,7 +1719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -243.78
+      value: -248
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1731,7 +1731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.709091
+      value: 0.70307976
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1743,7 +1743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.705117
+      value: 0.7111111
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1755,7 +1755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321544, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.678
+      value: 90.651
       objectReference: {fileID: 0}
     - target: {fileID: 8380573972775321545, guid: 49e3c5b76cdced84390bb1aabec3b332, type: 3}
       propertyPath: m_Name
@@ -1798,8 +1798,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698013247}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 239, y: 268, z: -1}
-  m_LocalScale: {x: 9.12, y: 9.12, z: 0}
+  m_LocalPosition: {x: 245, y: 266, z: -1}
+  m_LocalScale: {x: 9, y: 9.12, z: 0}
   m_Children: []
   m_Father: {fileID: 524951543}
   m_RootOrder: 2
@@ -1816,7 +1816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624a1a64ed0f9164b81ac2a7ecf2975d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: 1.3
+  rotation: 1.8
 --- !u!212 &1698013250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2152,8 +2152,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013029277}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -247, y: -265, z: -1}
-  m_LocalScale: {x: 9.12, y: 9.12, z: 0}
+  m_LocalPosition: {x: -249, y: -269, z: -1}
+  m_LocalScale: {x: 9, y: 9, z: 0}
   m_Children: []
   m_Father: {fileID: 524951543}
   m_RootOrder: 1
@@ -2170,7 +2170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 624a1a64ed0f9164b81ac2a7ecf2975d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotation: -1.3
+  rotation: -1.8
 --- !u!212 &2013029280
 SpriteRenderer:
   m_ObjectHideFlags: 0
