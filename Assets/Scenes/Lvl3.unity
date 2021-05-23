@@ -1318,16 +1318,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vicrory
       objectReference: {fileID: 0}
+    - target: {fileID: 8103006176412856535, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
 --- !u!224 &1621946037 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 941793019419358729, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8103006176412856535, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
   m_PrefabInstance: {fileID: 1621946036}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1621946038 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 941793019419358726, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8103006176412856536, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
   m_PrefabInstance: {fileID: 1621946036}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1705979987 stripped
