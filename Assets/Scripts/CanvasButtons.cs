@@ -90,7 +90,7 @@ public class CanvasButtons : MonoBehaviour
     private void PlayErrorSound()
     {
         GetComponent<AudioSource>().clip = errorSound;
-        if (PlayerPrefs.GetString("Sound") == "OFF")
+        if (PlayerPrefs.GetString("Sound") != "OFF")
             GetComponent<AudioSource>().Play();
     }
 }
