@@ -572,7 +572,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 994090233}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "COMING \nSOON"
+  m_text: "CUMING \nSOON"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06606988f2830ec4fa7f6373cae01566, type: 2}
   m_sharedMaterial: {fileID: 2808274936866498025, guid: 06606988f2830ec4fa7f6373cae01566, type: 2}
@@ -645,7 +645,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 140.35
+  m_fontSize: 141
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -788,9 +788,9 @@ RectTransform:
   m_Children:
   - {fileID: 665117797}
   - {fileID: 1034453503}
+  - {fileID: 909723660}
   - {fileID: 151498803}
   - {fileID: 272171406}
-  - {fileID: 909723660}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -816,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5504842333739066551, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5504842333739066551, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_AnchorMax.x
