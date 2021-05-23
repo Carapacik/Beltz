@@ -587,16 +587,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vicrory
       objectReference: {fileID: 0}
+    - target: {fileID: 8103006176412856535, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
 --- !u!224 &201845563 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 941793019419358729, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8103006176412856535, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
   m_PrefabInstance: {fileID: 201845562}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &201845564 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 941793019419358726, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
+  m_CorrespondingSourceObject: {fileID: 8103006176412856536, guid: 989cfe93efa0dc343999f099edb8418b, type: 3}
   m_PrefabInstance: {fileID: 201845562}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &244368181
@@ -1261,7 +1265,7 @@ RectTransform:
   - {fileID: 421207924}
   - {fileID: 244368182}
   m_Father: {fileID: 1219351088}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1515,10 +1519,10 @@ RectTransform:
   - {fileID: 1248545092}
   - {fileID: 873415866}
   - {fileID: 524951543}
-  - {fileID: 797342126}
   - {fileID: 2106134566}
-  - {fileID: 697862318}
   - {fileID: 201845563}
+  - {fileID: 697862318}
+  - {fileID: 797342126}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2246,7 +2250,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6488864308183694616, guid: 058e0e19823a4f84bad436ecb9852bb8, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6488864308183694616, guid: 058e0e19823a4f84bad436ecb9852bb8, type: 3}
       propertyPath: m_LocalScale.x
