@@ -35,7 +35,7 @@ public class CanvasButtons : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    
+
     public void ChooseLevel(int number)
     {
         if (number > PlayerPrefs.GetInt("LastCompletedLevel") + 1)
