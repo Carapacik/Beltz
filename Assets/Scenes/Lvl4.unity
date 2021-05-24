@@ -865,7 +865,7 @@ RectTransform:
   - {fileID: 1698013248}
   - {fileID: 98218502}
   m_Father: {fileID: 1219351088}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1305,7 +1305,7 @@ RectTransform:
   - {fileID: 1719965268}
   - {fileID: 2082268276}
   m_Father: {fileID: 1219351088}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1515,10 +1515,10 @@ RectTransform:
   m_Children:
   - {fileID: 1866434056}
   - {fileID: 60759608}
-  - {fileID: 1932919019}
-  - {fileID: 1248545092}
   - {fileID: 873415866}
+  - {fileID: 1248545092}
   - {fileID: 524951543}
+  - {fileID: 1932919019}
   - {fileID: 2106134566}
   - {fileID: 201845563}
   - {fileID: 697862318}
@@ -2133,11 +2133,23 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+    - target: {fileID: 6623393434950594555, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995505504389025842, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 697862319}
+    - target: {fileID: 7995505504389025842, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
 --- !u!224 &1932919019 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5504842333739066551, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6623393434950594555, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
   m_PrefabInstance: {fileID: 1932919018}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2013029277
