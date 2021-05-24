@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!224 &61932777 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5504842333739066551, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
-  m_PrefabInstance: {fileID: 2280703160750370046}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &62725455
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,8 +216,8 @@ RectTransform:
   m_Children:
   - {fileID: 2142429175}
   - {fileID: 1589543624}
+  - {fileID: 553932670}
   - {fileID: 2094886213}
-  - {fileID: 61932777}
   - {fileID: 1693220580}
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -236,6 +231,11 @@ RectTransform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7000172907100331338, guid: cef2f775ac99c5240883fc8399e1a234, type: 3}
   m_PrefabInstance: {fileID: 7000172907733006550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &553932670 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6623393434950594555, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+  m_PrefabInstance: {fileID: 2280703160750370046}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &854964412
 GameObject:
@@ -564,7 +564,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 62725459}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4, y: 0.2}
   m_AnchorMax: {x: 0.6, y: 0.35}
@@ -910,6 +910,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1693220579}
     - target: {fileID: 5504842334492695545, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623393434950594555, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7995505504389025842, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1693220579}
+    - target: {fileID: 7995505504389025842, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
