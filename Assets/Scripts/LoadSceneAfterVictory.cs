@@ -5,6 +5,6 @@ public class LoadSceneAfterVictory : MonoBehaviour
 {
     public void OnClose()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        CanvasButtons.NextScene();
     }
 }

@@ -1,5 +1,4 @@
 using UnityEngine;
-using Debug = System.Diagnostics.Debug;
 
 public class SwapBelts : MonoBehaviour
 {
@@ -19,7 +18,6 @@ public class SwapBelts : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Assert(Camera.main != null, "Camera.main not null");
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
