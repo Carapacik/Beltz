@@ -21,14 +21,20 @@ public class SwapBelts : MonoBehaviour
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
-            var hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null && hit.transform.gameObject == gameObject)
+            var hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
+
+            for (var i = 0; i < hits.Length; i++)
             {
-                isCorrect ^= true;
-                PlaySwitchSound();
-                ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
-                _animator.SetTrigger("Swap");
+                if (hits[i].collider != null && hits[i].transform.gameObject == gameObject)
+                {
+                    isCorrect ^= true;
+                    PlaySwitchSound();
+                    ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
+                    _animator.SetTrigger("Swap");
+                }
             }
+
+            
         }
     }
 
