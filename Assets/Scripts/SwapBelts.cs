@@ -10,8 +10,8 @@ public class SwapBelts : MonoBehaviour
 
     private void Start()
     {
-        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         _animator = gameObject.GetComponent<Animator>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -20,21 +20,16 @@ public class SwapBelts : MonoBehaviour
         {
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
-
             var hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
-
-            for (var i = 0; i < hits.Length; i++)
-            {
-                if (hits[i].collider != null && hits[i].transform.gameObject == gameObject)
+            
+            foreach (var item in hits)
+                if (item.collider != null && item.transform.gameObject == gameObject)
                 {
                     isCorrect ^= true;
                     PlaySwitchSound();
                     ChangeSprite(_spriteRenderer.sprite == beltX ? beltO : beltX);
                     _animator.SetTrigger("Swap");
                 }
-            }
-
-            
         }
     }
 
