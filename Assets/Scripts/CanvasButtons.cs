@@ -22,26 +22,20 @@ public class CanvasButtons : MonoBehaviour
         if (music == "OFF" && gameObject.name == "MusicButton")
             GetComponent<Image>().sprite = musicOff;
 
-        if (PlayerPrefs.GetInt("LastCompletedLevel") == 0) PlayerPrefs.SetInt("LastCompletedLevel", 1);
+        if (PlayerPrefs.GetInt("HighestLevel") == 0) PlayerPrefs.SetInt("HighestLevel", 1);
         PlayerPrefs.Save();
     }
 
     public void Play()
     {
-        ChooseLevel(PlayerPrefs.GetInt("LastCompletedLevel"));
+        // TODO : Last completed level
+        ChooseLevel(PlayerPrefs.GetInt("HighestLevel"));
     }
 
     public void ChooseLevel(int number)
     {
-        if (number > PlayerPrefs.GetInt("LastCompletedLevel") + 1)
-        {
-            PlayErrorSound();
-        }
-        else
-        {
-            PlayClickSound();
-            SceneManager.LoadScene($"Lvl{number}");
-        }
+        PlayClickSound();
+        SceneManager.LoadScene($"Lvl{number}");
     }
 
     public void LevelMenu()
