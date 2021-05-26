@@ -6,12 +6,12 @@ public class Levels : MonoBehaviour
 {
     public void Update()
     {
-        var lastLvl = PlayerPrefs.GetInt("LastCompletedLevel");
+        var highLvl = PlayerPrefs.GetInt("HighestLevel");
         var levelItems = GameObject.FindGameObjectsWithTag("LevelItem");
         foreach (var item in levelItems)
         {
             var lvlName = item.transform.GetChild(1).transform;
-            if (lastLvl >= int.Parse(lvlName.GetComponent<TextMeshProUGUI>().text))
+            if (highLvl >= int.Parse(lvlName.GetComponent<TextMeshProUGUI>().text))
             {
                 item.transform.GetChild(0).transform.GetComponent<Image>().color =
                     new Color(1, 1, 1, 0.9f);

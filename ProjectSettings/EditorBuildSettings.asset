@@ -40,8 +40,14 @@ EditorBuildSettings:
     guid: 082ad06c67f04fb4b918f3e8cae3503b
   - enabled: 1
     path: Assets/Scenes/Lvl10.unity
-    guid: cbb43b6624512664b94d15431fd9dd4d
+    guid: c42776dc72df52047a81ce85c8d13aa2
   - enabled: 1
-    path: Assets/Scenes/Secret.unity
-    guid: 5c759dc1a5e69574cae20b5adf92fccf
+    path: Assets/Scenes/Lvl11.unity
+    guid: eb62a878a2923994a85ae878e34e2360
+  - enabled: 1
+    path: Assets/Scenes/Lvl12.unity
+    guid: fb5b10fdcc0e3d44a9c726587ab1c3ba
+  - enabled: 1
+    path: Assets/Scenes/LvlSecret.unity
+    guid: b9f9217a9d435c84b8db1fc69fc3a612
   m_configObjects: {}
