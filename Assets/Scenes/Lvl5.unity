@@ -622,7 +622,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5132633704126783124, guid: a52348f60200fc24d88c46c31e3c384c, type: 3}
       propertyPath: m_Name
-      value: OBeltS (1)
+      value: OBeltS
       objectReference: {fileID: 0}
     - target: {fileID: 5132633704126783125, guid: a52348f60200fc24d88c46c31e3c384c, type: 3}
       propertyPath: m_RootOrder
@@ -1267,7 +1267,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1899314593705057434, guid: 15f71de1958cfe349bbee7587a9981c2, type: 3}
       propertyPath: m_Name
-      value: XBeltA (1)
+      value: XBeltA
       objectReference: {fileID: 0}
     - target: {fileID: 1899314593705057435, guid: 15f71de1958cfe349bbee7587a9981c2, type: 3}
       propertyPath: m_RootOrder

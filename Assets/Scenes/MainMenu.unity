@@ -625,7 +625,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 0}
 --- !u!114 &2094886217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1107,6 +1106,10 @@ PrefabInstance:
       propertyPath: parentCanvas
       value: 
       objectReference: {fileID: 62725455}
+    - target: {fileID: 6356230511835735599, guid: 7639da6be7521644ea852cd1177e337a, type: 3}
+      propertyPath: backgroundNumber
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7639da6be7521644ea852cd1177e337a, type: 3}
 --- !u!1001 &7000172907733006550

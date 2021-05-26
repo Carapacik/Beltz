@@ -16,7 +16,7 @@ public class Levels : MonoBehaviour
                 item.transform.GetChild(0).transform.GetComponent<Image>().color =
                     new Color(1, 1, 1, 0.9f);
                 lvlName.GetComponent<TextMeshProUGUI>().color =
-                    new Color(0.1254361f, 0.82f, 0.2322076f, 0.9f);
+                    new Color(0.3f, 0.85f, 0.5f, 0.9f);
             }
         }
     }

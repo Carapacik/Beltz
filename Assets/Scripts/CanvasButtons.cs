@@ -8,13 +8,12 @@ public class CanvasButtons : MonoBehaviour
     [SerializeField] private Sprite soundOff;
     [SerializeField] private Sprite musicOn;
     [SerializeField] private Sprite musicOff;
-    [SerializeField] private AudioClip errorSound;
 
     private void Start()
     {
         var sound = PlayerPrefs.GetString("Sound");
         if (sound == "") PlayerPrefs.SetString("Sound", "ON");
-        if (sound == "OFF" && sound != "" && gameObject.name == "SoundButton")
+        if (sound == "OFF" && gameObject.name == "SoundButton")
             GetComponent<Image>().sprite = soundOff;
 
         var music = PlayerPrefs.GetString("Music");
@@ -22,14 +21,12 @@ public class CanvasButtons : MonoBehaviour
         if (music == "OFF" && gameObject.name == "MusicButton")
             GetComponent<Image>().sprite = musicOff;
 
-        if (PlayerPrefs.GetInt("HighestLevel") == 0) PlayerPrefs.SetInt("HighestLevel", 1);
         PlayerPrefs.Save();
     }
 
     public void Play()
     {
-        // TODO : Last completed level
-        ChooseLevel(PlayerPrefs.GetInt("HighestLevel"));
+        ChooseLevel(PlayerPrefs.GetInt("LastCompletedLevel") + 1);
     }
 
     public void ChooseLevel(int number)
@@ -77,13 +74,6 @@ public class CanvasButtons : MonoBehaviour
 
     public void PlayClickSound()
     {
-        if (PlayerPrefs.GetString("Sound") != "OFF")
-            GetComponent<AudioSource>().Play();
-    }
-
-    private void PlayErrorSound()
-    {
-        GetComponent<AudioSource>().clip = errorSound;
         if (PlayerPrefs.GetString("Sound") != "OFF")
             GetComponent<AudioSource>().Play();
     }
