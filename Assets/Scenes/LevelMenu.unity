@@ -539,8 +539,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283453520
-  m_fontColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
+    rgba: 4283716692
+  m_fontColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -617,7 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 163138894}
   m_Layer: 5
-  m_Name: LevelItem (1)
+  m_Name: LevelItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -934,7 +934,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &364857289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1301,7 +1300,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &460077777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,7 +1546,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &599124467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2179,7 +2176,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &818484849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2455,7 +2451,7 @@ GameObject:
   m_Component:
   - component: {fileID: 837929323}
   m_Layer: 5
-  m_Name: LevelItem (3)
+  m_Name: LevelItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2505,7 +2501,7 @@ GameObject:
   - component: {fileID: 910449077}
   - component: {fileID: 910449076}
   m_Layer: 5
-  m_Name: Difficulty (1)
+  m_Name: Difficulty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2895,8 +2891,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283453520
-  m_fontColor: {r: 0.3137255, g: 0.3137255, b: 0.3137255, a: 1}
+    rgba: 4283782485
+  m_fontColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3115,7 +3111,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1160173998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3228,7 +3223,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1197788881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3656,8 +3650,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283387727
-  m_fontColor: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 1}
+    rgba: 4283782485
+  m_fontColor: {r: 0.33333334, g: 0.33333334, b: 0.33333334, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3876,7 +3870,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1421107465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4548,7 +4541,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1631024873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4907,7 +4899,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1705100923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5116,7 +5107,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1711478727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5451,7 +5441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1805282099}
   m_Layer: 5
-  m_Name: LevelItem (2)
+  m_Name: LevelItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5840,7 +5830,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &1920077180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6054,7 +6043,6 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
-  errorSound: {fileID: 8300000, guid: b339e82d748b5a940a240e8b5c61d508, type: 3}
 --- !u!114 &2033706861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6346,7 +6334,7 @@ PrefabInstance:
       objectReference: {fileID: 847385103}
     - target: {fileID: 6623393434950594555, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7995505504389025842, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6392,7 +6380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8117403851225307906, guid: 854472bbc01eb76408749f5c6a825f18, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8117403851225307906, guid: 854472bbc01eb76408749f5c6a825f18, type: 3}
       propertyPath: m_AnchorMax.x
