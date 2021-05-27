@@ -10,7 +10,7 @@ public class BackgroundChoose : MonoBehaviour
         backgroundNumber = backgroundNumber switch
         {
             -1 => PlayerPrefs.GetInt("LastCompletedLevel") + 1,
-            0 => Random.Range(1, 13),
+            0 => Random.Range(1, 12),
             _ => backgroundNumber
         };
         var bg = Resources.Load<GameObject>($"Prefabs/Backgrounds/BG{backgroundNumber}").transform;
