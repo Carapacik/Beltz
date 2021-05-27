@@ -243,7 +243,7 @@ PlayerSettings:
   useCustomProguardFile: 0
   AndroidTargetArchitectures: 1
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 0}
+  androidSplashScreen: {fileID: 2800000, guid: c7a1f6c3864ed8141ac55129fce26c3a, type: 3}
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   AndroidBuildApkPerCpuArchitecture: 0
@@ -267,7 +267,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 1be99de21fddd5849a8cb7d728010ec0, type: 3}
+      m_Icon: {fileID: 2800000, guid: c7a1f6c3864ed8141ac55129fce26c3a, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
