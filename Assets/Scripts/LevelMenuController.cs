@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Levels : MonoBehaviour
+public class LevelMenuController : MonoBehaviour
 {
     public void Update()
     {
