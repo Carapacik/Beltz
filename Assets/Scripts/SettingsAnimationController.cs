@@ -3,25 +3,24 @@ using UnityEngine;
 public class SettingsAnimationController : MonoBehaviour
 {
     private GameObject[] _belts;
-    private AudioSource _music;
-
 
     private void Start()
     {
-        _music = ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>();
         _belts = GameObject.FindGameObjectsWithTag("Belt");
-    }
-
-    private void OnClose()
-    {
-        VictoryController.SwapAllBelts(_belts, true);
-        _music.pitch = 1f;
-        gameObject.SetActive(false);
     }
 
     private void OnOpen()
     {
-        VictoryController.SwapAllBelts(_belts, false);
-        _music.pitch = 0.85f;
+        ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().pitch = .85f;
+        foreach (var belt in _belts)
+            belt.gameObject.GetComponent<SwapBelts>().enabled = false;
+    }
+
+    private void OnClose()
+    {
+        ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().pitch = 1;
+        foreach (var belt in _belts)
+            belt.gameObject.GetComponent<SwapBelts>().enabled = true;
+        gameObject.SetActive(false);
     }
 }
