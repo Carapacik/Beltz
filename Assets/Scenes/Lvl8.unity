@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d655577f8e1a94385ec52a60584185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryObject: {fileID: 1925206342}
+  victoryObject: {fileID: 1925206341}
   currentLvl: 8
 --- !u!4 &43383319 stripped
 Transform:
@@ -406,7 +406,7 @@ RectTransform:
   m_Children:
   - {fileID: 2123117012}
   - {fileID: 1811990935}
-  - {fileID: 1925206341}
+  - {fileID: 1925206342}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2130,16 +2130,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewVictory
       objectReference: {fileID: 0}
+    - target: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df6b298583d34c149aad94e135401b82, type: 3}
---- !u!224 &1925206341 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 372596825689949946, guid: df6b298583d34c149aad94e135401b82, type: 3}
+--- !u!1 &1925206341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5237312626224079280, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 1925206340}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1925206342 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 372596825689949947, guid: df6b298583d34c149aad94e135401b82, type: 3}
+--- !u!224 &1925206342 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 1925206340}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2027885110
