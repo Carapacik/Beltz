@@ -386,7 +386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d655577f8e1a94385ec52a60584185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryObject: {fileID: 1514334562}
+  victoryObject: {fileID: 1521385213}
   currentLvl: 1
 --- !u!1001 &348257072
 PrefabInstance:
@@ -583,7 +583,7 @@ RectTransform:
   m_Children:
   - {fileID: 1735639733}
   - {fileID: 565323732}
-  - {fileID: 1514334563}
+  - {fileID: 1521385214}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1287,14 +1287,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4882372600024364165, guid: 058e0e19823a4f84bad436ecb9852bb8, type: 3}
   m_PrefabInstance: {fileID: 4882372601398194830}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1514334562 stripped
+--- !u!1 &1521385213 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 372596825689949947, guid: df6b298583d34c149aad94e135401b82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5237312626224079280, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 372596826331869081}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1514334563 stripped
+--- !u!224 &1521385214 stripped
 RectTransform:
-  m_CorrespondingSourceObject: {fileID: 372596825689949946, guid: df6b298583d34c149aad94e135401b82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 372596826331869081}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523047019
@@ -1701,6 +1701,10 @@ PrefabInstance:
     - target: {fileID: 372596825689949947, guid: df6b298583d34c149aad94e135401b82, type: 3}
       propertyPath: m_Name
       value: NewVictory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df6b298583d34c149aad94e135401b82, type: 3}

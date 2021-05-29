@@ -547,16 +547,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewVictory
       objectReference: {fileID: 0}
+    - target: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df6b298583d34c149aad94e135401b82, type: 3}
---- !u!224 &297169492 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 372596825689949946, guid: df6b298583d34c149aad94e135401b82, type: 3}
+--- !u!1 &297169492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5237312626224079280, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 297169491}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &297169493 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 372596825689949947, guid: df6b298583d34c149aad94e135401b82, type: 3}
+--- !u!224 &297169493 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 297169491}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &316578573 stripped
@@ -1776,7 +1780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d655577f8e1a94385ec52a60584185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryObject: {fileID: 297169493}
+  victoryObject: {fileID: 297169492}
   currentLvl: 9
 --- !u!1001 &1760201385
 PrefabInstance:
@@ -2161,7 +2165,7 @@ RectTransform:
   m_Children:
   - {fileID: 1012837808}
   - {fileID: 1760866057}
-  - {fileID: 297169492}
+  - {fileID: 297169493}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
