@@ -259,13 +259,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 444061773}
     m_Modifications:
+    - target: {fileID: 3888572744469500948, guid: 6172e6242762627419417eb8924c359d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27e371a22555ad841b092291f69b0db2, type: 3}
     - target: {fileID: 3888572744469500951, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3888572744469500968, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: m_Name
-      value: XBeltS
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 3888572744469500969, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: m_RootOrder
@@ -428,14 +432,14 @@ PrefabInstance:
     - target: {fileID: 3888572744469500948, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 27e371a22555ad841b092291f69b0db2, type: 3}
+      objectReference: {fileID: 21300000, guid: 90964862d18378144b8392053c35fd42, type: 3}
     - target: {fileID: 3888572744469500951, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3888572744469500968, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 3888572744469500969, guid: 6172e6242762627419417eb8924c359d, type: 3}
       propertyPath: m_RootOrder
@@ -1050,12 +1054,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862943, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862944, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3515597459712862947, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 90964862d18378144b8392053c35fd42, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
 --- !u!224 &700456904 stripped
@@ -1507,12 +1515,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862943, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862944, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3515597459712862947, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 90964862d18378144b8392053c35fd42, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
 --- !u!1001 &1217994692
@@ -1770,8 +1782,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862943, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
+    - target: {fileID: 3515597459712862944, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
+      propertyPath: isCorrect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515597459712862947, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 90964862d18378144b8392053c35fd42, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
 --- !u!4 &1330745763 stripped
@@ -1796,7 +1816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 372596825689949946, guid: df6b298583d34c149aad94e135401b82, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 372596825689949946, guid: df6b298583d34c149aad94e135401b82, type: 3}
       propertyPath: m_AnchorMax.x
@@ -2462,7 +2482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862943, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862944, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: isCorrect
@@ -2523,7 +2543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515597459712862943, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}
       propertyPath: m_Name
-      value: OBeltS
+      value: Belt
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e24ea1f9b56630c428fd1c7aeb0d6ccc, type: 3}

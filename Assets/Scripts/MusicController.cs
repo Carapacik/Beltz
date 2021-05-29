@@ -6,12 +6,11 @@ public class MusicController : MonoBehaviour
 
     private void Awake()
     {
-        if (music != null || PlayerPrefs.GetString("Music") == "OFF")
+        if (PlayerPrefs.GetString("Music") == "OFF")
+            gameObject.GetComponent<AudioSource>().enabled = false;
+        if (music != null)
         {
-            if (PlayerPrefs.GetString("Music") == "OFF")
-                gameObject.GetComponent<AudioSource>().enabled = false;
-            else
-                Destroy(gameObject);
+            Destroy(gameObject);
         }
         else
         {
