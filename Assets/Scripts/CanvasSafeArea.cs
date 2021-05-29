@@ -3,9 +3,8 @@ using UnityEngine;
 [RequireComponent(typeof(Canvas))]
 public class CanvasSafeArea : MonoBehaviour
 {
-    [SerializeField] private RectTransform safeAreaRect;
+    [SerializeField] public RectTransform safeAreaRect;
     private Canvas _canvas;
-
     private Rect _lastSafeArea = Rect.zero;
 
     private void Awake()
