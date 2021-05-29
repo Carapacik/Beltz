@@ -21,7 +21,7 @@ public class CanvasButtons : MonoBehaviour
         if (music == "OFF" && gameObject.name == "MusicButton")
             GetComponent<Image>().sprite = musicOff;
 
-        if (PlayerPrefs.GetInt("LastCompletedLevel") == 12) 
+        if (PlayerPrefs.GetInt("LastCompletedLevel") == 12)
             PlayerPrefs.SetInt("LastCompletedLevel", 0);
         PlayerPrefs.Save();
     }

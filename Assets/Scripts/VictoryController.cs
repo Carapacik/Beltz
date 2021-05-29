@@ -22,7 +22,7 @@ public class VictoryController : MonoBehaviour
                 belt.gameObject.GetComponent<SwapBelts>().enabled = false;
 
             PlayerPrefs.SetInt("LastCompletedLevel", currentLvl);
-            if (currentLvl > PlayerPrefs.GetInt("HighestLevel")) 
+            if (currentLvl > PlayerPrefs.GetInt("HighestLevel"))
                 PlayerPrefs.SetInt("HighestLevel", currentLvl);
             PlayerPrefs.Save();
         }
