@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class MusicController : MonoBehaviour
 {
-    private static MusicController _music;
+    private static MusicController music;
 
     private void Awake()
     {
-        if (_music != null || PlayerPrefs.GetString("Music") == "OFF")
+        if (music != null || PlayerPrefs.GetString("Music") == "OFF")
         {
             if (PlayerPrefs.GetString("Music") == "OFF")
                 gameObject.GetComponent<AudioSource>().enabled = false;
@@ -15,7 +15,7 @@ public class MusicController : MonoBehaviour
         }
         else
         {
-            _music = this;
+            music = this;
             transform.gameObject.DontDestroyOnLoad();
         }
     }
