@@ -13,10 +13,8 @@ public class LevelMenuController : MonoBehaviour
             var lvlName = item.transform.GetChild(1).transform;
             if (highLvl >= int.Parse(lvlName.GetComponent<TextMeshProUGUI>().text))
             {
-                item.transform.GetChild(0).transform.GetComponent<Image>().color =
-                    new Color(1, 1, 1, 0.9f);
-                lvlName.GetComponent<TextMeshProUGUI>().color =
-                    new Color(0.3f, 0.85f, 0.5f, 0.9f);
+                item.transform.GetChild(0).transform.GetComponent<Image>().color = new Color(1, 1, 1, .9f);
+                lvlName.GetComponent<TextMeshProUGUI>().color = new Color(.3f, .85f, .5f, .9f);
             }
         }
     }

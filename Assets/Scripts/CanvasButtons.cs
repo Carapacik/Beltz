@@ -13,16 +13,11 @@ public class CanvasButtons : MonoBehaviour
     {
         var sound = PlayerPrefs.GetString("Sound");
         if (sound == "") PlayerPrefs.SetString("Sound", "ON");
-        if (sound == "OFF" && gameObject.name == "SoundButton")
-            GetComponent<Image>().sprite = soundOff;
-
+        if (sound == "OFF" && gameObject.name == "SoundButton") GetComponent<Image>().sprite = soundOff;
         var music = PlayerPrefs.GetString("Music");
         if (music == "") PlayerPrefs.SetString("Music", "ON");
-        if (music == "OFF" && gameObject.name == "MusicButton")
-            GetComponent<Image>().sprite = musicOff;
-
-        if (PlayerPrefs.GetInt("LastCompletedLevel") == 12)
-            PlayerPrefs.SetInt("LastCompletedLevel", 0);
+        if (music == "OFF" && gameObject.name == "MusicButton") GetComponent<Image>().sprite = musicOff;
+        if (PlayerPrefs.GetInt("LastCompletedLevel") == 12) PlayerPrefs.SetInt("LastCompletedLevel", 0);
         PlayerPrefs.Save();
     }
 
@@ -76,7 +71,6 @@ public class CanvasButtons : MonoBehaviour
 
     public void PlayClickSound()
     {
-        if (PlayerPrefs.GetString("Sound") != "OFF")
-            GetComponent<AudioSource>().Play();
+        if (PlayerPrefs.GetString("Sound") != "OFF") GetComponent<AudioSource>().Play();
     }
 }
