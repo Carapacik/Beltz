@@ -6,8 +6,7 @@ public class MusicController : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetString("Music") == "OFF")
-            gameObject.GetComponent<AudioSource>().enabled = false;
+        if (PlayerPrefs.GetString("Music") == "OFF") gameObject.GetComponent<AudioSource>().enabled = false;
         if (music != null)
         {
             Destroy(gameObject);

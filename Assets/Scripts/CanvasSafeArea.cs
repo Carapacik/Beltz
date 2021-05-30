@@ -30,7 +30,6 @@ public class CanvasSafeArea : MonoBehaviour
     private void ApplySafeArea()
     {
         if (safeAreaRect == null) return;
-
         var safeArea = Screen.safeArea;
         var anchorMin = safeArea.position;
         var anchorMax = safeArea.position + safeArea.size;
@@ -39,7 +38,6 @@ public class CanvasSafeArea : MonoBehaviour
         anchorMin.y /= pixelRect.height;
         anchorMax.x /= pixelRect.width;
         anchorMax.y /= pixelRect.height;
-
         safeAreaRect.anchorMin = anchorMin;
         safeAreaRect.anchorMax = anchorMax;
     }

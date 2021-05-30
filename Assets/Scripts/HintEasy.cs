@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Hint : MonoBehaviour
+public class HintEasy : MonoBehaviour
 {
     public void ShowHint()
     {

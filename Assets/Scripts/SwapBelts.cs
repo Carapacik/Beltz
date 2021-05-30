@@ -21,7 +21,6 @@ public class SwapBelts : MonoBehaviour
             var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var mousePos2D = new Vector2(mousePos.x, mousePos.y);
             var hits = Physics2D.RaycastAll(mousePos2D, Vector2.zero);
-
             foreach (var item in hits)
                 if (item.collider != null && item.transform.gameObject == gameObject)
                 {
@@ -40,7 +39,6 @@ public class SwapBelts : MonoBehaviour
 
     private void PlaySwitchSound()
     {
-        if (PlayerPrefs.GetString("Sound") != "OFF")
-            GetComponent<AudioSource>().Play();
+        if (PlayerPrefs.GetString("Sound") != "OFF") GetComponent<AudioSource>().Play();
     }
 }
