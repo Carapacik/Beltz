@@ -1415,7 +1415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26d655577f8e1a94385ec52a60584185, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  victoryObject: {fileID: 2015271395}
+  victoryObject: {fileID: 1531706750}
   currentLvl: 6
 --- !u!1001 &1299764479
 PrefabInstance:
@@ -1838,6 +1838,11 @@ PrefabInstance:
 --- !u!224 &1531706749 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5237312626224079281, guid: df6b298583d34c149aad94e135401b82, type: 3}
+  m_PrefabInstance: {fileID: 1531706748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1531706750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5237312626224079280, guid: df6b298583d34c149aad94e135401b82, type: 3}
   m_PrefabInstance: {fileID: 1531706748}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1561063361 stripped
