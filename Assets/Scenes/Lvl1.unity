@@ -1717,7 +1717,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1899314593705057434, guid: 15f71de1958cfe349bbee7587a9981c2, type: 3}
       propertyPath: m_Name
-      value: XBeltA
+      value: Belt
       objectReference: {fileID: 0}
     - target: {fileID: 1899314593705057435, guid: 15f71de1958cfe349bbee7587a9981c2, type: 3}
       propertyPath: m_RootOrder
