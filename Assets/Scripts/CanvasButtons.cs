@@ -8,6 +8,7 @@ public class CanvasButtons : MonoBehaviour
     [SerializeField] private Sprite soundOff;
     [SerializeField] private Sprite musicOn;
     [SerializeField] private Sprite musicOff;
+    [SerializeField] private AudioClip errorAudioSource;
 
     private void Start()
     {
@@ -18,18 +19,30 @@ public class CanvasButtons : MonoBehaviour
         if (music == "") PlayerPrefs.SetString("Music", "ON");
         if (music == "OFF" && gameObject.name == "MusicButton") GetComponent<Image>().sprite = musicOff;
         if (PlayerPrefs.GetInt("LastCompletedLevel") == 12) PlayerPrefs.SetInt("LastCompletedLevel", 0);
+
         PlayerPrefs.Save();
     }
 
     public void Play()
     {
-        ChooseLevel(PlayerPrefs.GetInt("LastCompletedLevel") + 1);
+        if (PlayerPrefs.GetInt("LastCompletedLevel") == 0 && PlayerPrefs.GetInt("HighestLevel") == 0)
+            SceneManager.LoadScene("Tutorial");
+        else ChooseLevel(PlayerPrefs.GetInt("LastCompletedLevel") + 1);
     }
 
     public void ChooseLevel(int number)
     {
-        PlayClickSound();
-        SceneManager.LoadScene($"Lvl{number}");
+        if (number > PlayerPrefs.GetInt("HighestLevel") + 1)
+        {
+            GetComponent<AudioSource>().clip = errorAudioSource;
+            if (PlayerPrefs.GetString("Sound") != "OFF")
+                GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            PlayClickSound();
+            SceneManager.LoadScene($"Lvl{number}");
+        }
     }
 
     public void LevelMenu()
