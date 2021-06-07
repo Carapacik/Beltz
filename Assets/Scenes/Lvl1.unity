@@ -849,6 +849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 565323732}
     m_Modifications:
+    - target: {fileID: 7285319509522044657, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 7285319509522044658, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -883,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285319509522044658, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 113
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 7285319509522044658, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -919,7 +923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285319509522044658, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: -110
       objectReference: {fileID: 0}
     - target: {fileID: 7285319509522044658, guid: f12da82b91cec324dbb87772a8b48a0a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
