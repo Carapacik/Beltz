@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - belt
+  - Belt
+  - LevelItem
   layers:
   - Default
   - TransparentFX
