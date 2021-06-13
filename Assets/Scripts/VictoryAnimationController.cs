@@ -31,4 +31,10 @@ public class VictoryAnimationController : MonoBehaviour
     {
         SceneManager.LoadScene("LevelMenu");
     }
+
+    private void PlayVideoAds()
+    {
+        var sceneIndex = SceneManager.GetActiveScene().buildIndex - 2;
+        if (sceneIndex % 3 == 0) AdsManager.PlayInterstitialAd();
+    }
 }
