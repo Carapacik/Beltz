@@ -543,6 +543,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorAudioSource: {fileID: 0}
 --- !u!82 &5237312626811963741
 AudioSource:
   m_ObjectHideFlags: 0
@@ -795,7 +796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f9f87aae815353b4393f135d5c47ac45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a4ea16b25e15a5429db17f32f8242a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -889,6 +890,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorAudioSource: {fileID: 0}
 --- !u!82 &5237312627141144898
 AudioSource:
   m_ObjectHideFlags: 0
