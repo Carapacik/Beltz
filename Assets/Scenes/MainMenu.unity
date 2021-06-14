@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 62725457}
   - component: {fileID: 62725456}
   - component: {fileID: 62725460}
+  - component: {fileID: 62725461}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -238,6 +239,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   safeAreaRect: {fileID: 1342841530}
+--- !u!114 &62725461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62725455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadc0d2b4912bf34588a5a2b6ffd2a94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &385496312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 53865515122254991, guid: 3d7c6767b6a8f22499cdbc61e15bae76, type: 3}
@@ -269,6 +282,7 @@ GameObject:
   - component: {fileID: 854964415}
   - component: {fileID: 854964414}
   - component: {fileID: 854964413}
+  - component: {fileID: 854964416}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -341,6 +355,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &854964416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854964412}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6e6e15bdc9f3f458c572dde1eaf007, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  captureWidth: 1080
+  captureHeight: 1920
+  hideGameObject: {fileID: 0}
+  optimizeForManyScreenshots: 1
+  format: 2
+  folder: 
 --- !u!1 &1296630632
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +718,7 @@ MonoBehaviour:
   soundOff: {fileID: 0}
   musicOn: {fileID: 0}
   musicOff: {fileID: 0}
+  errorAudioSource: {fileID: 0}
 --- !u!114 &2094886217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,6 +990,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewSettings
       objectReference: {fileID: 0}
+    - target: {fileID: 53865515122254991, guid: 3d7c6767b6a8f22499cdbc61e15bae76, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7c6767b6a8f22499cdbc61e15bae76, type: 3}
 --- !u!1001 &2280703160750370046
@@ -966,6 +1003,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1342841530}
     m_Modifications:
+    - target: {fileID: 1118830416118580824, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2280703159512836457, guid: c791737458f6bf4439532b0ade3dbc5c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

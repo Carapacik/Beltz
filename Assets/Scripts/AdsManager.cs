@@ -25,8 +25,11 @@ public class AdsManager : MonoBehaviour, IUnityAdsListener
     {
         if (Advertisement.IsReady("Banner_Android"))
         {
-            Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
-            Advertisement.Banner.Show("Banner_Android");
+            if (PlayerPrefs.GetInt("HighestLevel") > 0)
+            {
+                Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
+                Advertisement.Banner.Show("Banner_Android");
+            }
         }
         else
         {
