@@ -1,5 +1,7 @@
 # Beltz
 
+**[Available in Play Market](https://play.google.com/store/apps/details?id=com.Carapacik.Beltz)**
+
 ### Hyper-casual 2d puzzle game.
 The game is a system of *shafts* and *belts*. It is necessary to make sure that the belts are in the correct position, so that the shafts begin to spin.
 
