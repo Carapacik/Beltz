@@ -14,7 +14,7 @@ public class MainThemeManager : MonoBehaviour
         else
         {
             _music = this;
-            DontDestroyOnLoad(gameObject);
+            transform.gameObject.DontDestroyOnLoad();
         }
     }
 }
