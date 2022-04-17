@@ -18,8 +18,7 @@ public class SettingsAnimationsController : MonoBehaviour
         shadowBackground.transform.GetComponent<Image>().DOFade(0.5f, 1);
         settingsBox.transform.DOLocalMoveY(760, 0);
         ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().DOPitch(0.8f, 1);
-
-        settingsBox.transform.DOLocalMoveY(510, 1)
+        settingsBox.transform.DOLocalMoveY(520, 1)
             .OnComplete(() =>
             {
                 foreach (var belt in _belts) belt.gameObject.GetComponent<SwapBeltz>().enabled = false;
@@ -29,9 +28,8 @@ public class SettingsAnimationsController : MonoBehaviour
     public void CloseSettings()
     {
         shadowBackground.transform.GetComponent<Image>().DOFade(0, 1);
-        settingsBox.transform.DOLocalMoveY(510, 0);
+        settingsBox.transform.DOLocalMoveY(520, 0);
         ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().DOPitch(1, 1);
-
         settingsBox.transform.DOLocalMoveY(760, 1)
             .OnComplete(() =>
             {

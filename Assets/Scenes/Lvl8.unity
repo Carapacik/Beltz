@@ -2031,7 +2031,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6985904111772247893, guid: f1ac273b38ff56940bca4b3d1856ea8a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 150
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6985904111772247893, guid: f1ac273b38ff56940bca4b3d1856ea8a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2097,11 +2097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.6301923
+      value: -0.63607824
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalRotation.y
@@ -2109,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7764391
+      value: 0.77162457
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2121,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3802889140851277224, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 258.129
+      value: 259
       objectReference: {fileID: 0}
     - target: {fileID: 6561677979531587003, guid: 18f17a2fd141cb641a362c83ad4a818c, type: 3}
       propertyPath: m_Name
@@ -2604,7 +2604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4745517129198543754, guid: 43ea776de2843bc4ab12f3fa4b44e873, type: 3}
       propertyPath: isCorrect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4745517129198543755, guid: 43ea776de2843bc4ab12f3fa4b44e873, type: 3}
       propertyPath: m_Sprite
