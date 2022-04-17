@@ -32,8 +32,7 @@ public class CanvasButton : MonoBehaviour
                 break;
         }
 
-        if (PlayerPrefs.GetInt("LastCompletedLevel") == 12) PlayerPrefs.SetInt("LastCompletedLevel", 0);
-
+        if (PlayerPrefs.GetInt("LastCompletedLevel") == 16) PlayerPrefs.SetInt("LastCompletedLevel", 0);
         PlayerPrefs.Save();
     }
 
@@ -52,10 +51,15 @@ public class CanvasButton : MonoBehaviour
             if (PlayerPrefs.GetString("Sound") != "OFF")
                 GetComponent<AudioSource>().Play();
         }
-        else
+        else if (number is < 17 and > 0)
         {
             PlayClickSound();
             SceneManager.LoadScene($"Lvl{number}");
+        }
+        else
+        {
+            PlayClickSound();
+            SceneManager.LoadScene("Complete");
         }
     }
 
@@ -94,6 +98,11 @@ public class CanvasButton : MonoBehaviour
             GetComponent<Image>().sprite = musicOn;
             GameObject.Find("MainTheme").GetComponent<AudioSource>().enabled = true;
         }
+    }
+
+    public void RedirectToGit()
+    {
+        Application.OpenURL("https://github.com/Carapacik/Beltz");
     }
 
     public void PlayClickSound()

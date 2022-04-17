@@ -10,8 +10,7 @@ public class BackgroundManager : MonoBehaviour
     {
         backgroundNumber = backgroundNumber switch
         {
-            -1 => PlayerPrefs.GetInt("LastCompletedLevel") + 1,
-            0 => Random.Range(1, 12),
+            0 => Random.Range(1, 16),
             _ => backgroundNumber
         };
         var bg = Resources.Load<Image>($"BG/BG{backgroundNumber}");
