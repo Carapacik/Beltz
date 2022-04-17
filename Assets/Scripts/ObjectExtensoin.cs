@@ -3,7 +3,7 @@ using UnityEngine;
 
 public static class ObjectExtension
 {
-    private static readonly List<GameObject> SavedObjects = new List<GameObject>();
+    private static readonly List<GameObject> SavedObjects = new();
 
     public static void DontDestroyOnLoad(this GameObject obj)
     {
