@@ -16,7 +16,6 @@ public class VictoryController : MonoBehaviour
     {
         var correctCounter = _belts.Select(belt => belt.GetComponent<SwapBeltz>()).Count(x => x.isCorrect);
         if (correctCounter != _belts.Length) return;
-
         victoryObject.SetActive(true);
         var shafts = GameObject.Find("Shafts").transform;
         foreach (Transform shaft in shafts) shaft.gameObject.GetComponent<ShaftAnimationController>().enabled = true;

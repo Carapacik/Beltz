@@ -572,7 +572,7 @@ RectTransform:
   - {fileID: 1987704920}
   - {fileID: 713150176}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1110,7 +1110,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 785543686046783049, guid: 0fbab03b5abbe22418c91ee52d7955d8, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 785543686046783049, guid: 0fbab03b5abbe22418c91ee52d7955d8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1470,6 +1470,10 @@ PrefabInstance:
       propertyPath: belt
       value: 
       objectReference: {fileID: 1515237028}
+    - target: {fileID: 469439998547161161, guid: 1305b48300d18434191ce2ecde29209f, type: 3}
+      propertyPath: rotation
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 469439998547161174, guid: 1305b48300d18434191ce2ecde29209f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1997,7 +2001,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1732873823
 PrefabInstance:
