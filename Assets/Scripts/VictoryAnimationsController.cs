@@ -9,13 +9,13 @@ public class VictoryAnimationsController : MonoBehaviour
     private void Start()
     {
         PlayVictorySound();
-        gameObject .transform .GetComponent<Image>().DOFade(0.6f, 2).OnComplete(() =>
+        gameObject.transform.GetComponent<Image>().DOFade(0.6f, 2).OnComplete(() =>
         {
             victoryBox.SetActive(true);
             victoryBox.transform.DOScale(1, 1);
         });
     }
-    
+
     private void PlayVictorySound()
     {
         if (PlayerPrefs.GetString("Sound") != "OFF") GetComponent<AudioSource>().Play();

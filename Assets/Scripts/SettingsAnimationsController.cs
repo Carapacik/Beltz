@@ -15,11 +15,13 @@ public class SettingsAnimationsController : MonoBehaviour
 
     public void OpenSettings()
     {
-        foreach (var belt in _belts) belt.gameObject.GetComponent<SwapBeltz>().enabled = false;
         shadowBackground.transform.GetComponent<Image>().DOFade(0.5f, 1);
         settingsBox.transform.DOLocalMoveY(760, 0);
         settingsBox.transform.DOLocalMoveY(510, 1);
-        ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().DOPitch(0.8f, 1);
+        ObjectExtension.GetSavedObjects()[0].transform.GetComponent<AudioSource>().DOPitch(0.8f, 1).OnComplete(() =>
+        {
+            foreach (var belt in _belts) belt.gameObject.GetComponent<SwapBeltz>().enabled = false;
+        });
     }
 
     public void CloseSettings()
