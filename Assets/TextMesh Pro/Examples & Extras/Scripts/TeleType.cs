@@ -1,30 +1,32 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
+
 
 namespace TMPro.Examples
 {
+    
     public class TeleType : MonoBehaviour
     {
+
+
         //[Range(0, 100)]
         //public int RevealSpeed = 50;
 
-        private readonly string label01 =
-            "Example <sprite=2> of using <sprite=7> <#ffa000>Graphics Inline</color> <sprite=5> with Text in <font=\"Bangers SDF\" material=\"Bangers SDF - Drop Shadow\">TextMesh<#40a0ff>Pro</color></font><sprite=0> and Unity<sprite=1>";
-
-        private readonly string label02 =
-            "Example <sprite=2> of using <sprite=7> <#ffa000>Graphics Inline</color> <sprite=5> with Text in <font=\"Bangers SDF\" material=\"Bangers SDF - Drop Shadow\">TextMesh<#40a0ff>Pro</color></font><sprite=0> and Unity<sprite=2>";
+        private string label01 = "Example <sprite=2> of using <sprite=7> <#ffa000>Graphics Inline</color> <sprite=5> with Text in <font=\"Bangers SDF\" material=\"Bangers SDF - Drop Shadow\">TextMesh<#40a0ff>Pro</color></font><sprite=0> and Unity<sprite=1>";
+        private string label02 = "Example <sprite=2> of using <sprite=7> <#ffa000>Graphics Inline</color> <sprite=5> with Text in <font=\"Bangers SDF\" material=\"Bangers SDF - Drop Shadow\">TextMesh<#40a0ff>Pro</color></font><sprite=0> and Unity<sprite=2>";
 
 
         private TMP_Text m_textMeshPro;
 
 
-        private void Awake()
+        void Awake()
         {
             // Get Reference to TextMeshPro Component
             m_textMeshPro = GetComponent<TMP_Text>();
             m_textMeshPro.text = label01;
             m_textMeshPro.enableWordWrapping = true;
             m_textMeshPro.alignment = TextAlignmentOptions.Top;
+
 
 
             //if (GetComponentInParent(typeof(Canvas)) as Canvas == null)
@@ -37,19 +39,21 @@ namespace TMPro.Examples
             //    gameObject.GetComponent<RectTransform>().sizeDelta = new Vector2(500, 300);
             //    m_textMeshPro.fontSize = 48;
             //}
+
+
         }
 
 
-        private IEnumerator Start()
+        IEnumerator Start()
         {
+
             // Force and update of the mesh to get valid information.
             m_textMeshPro.ForceMeshUpdate();
 
 
-            var totalVisibleCharacters =
-                m_textMeshPro.textInfo.characterCount; // Get # of Visible Character in text object
-            var counter = 0;
-            var visibleCount = 0;
+            int totalVisibleCharacters = m_textMeshPro.textInfo.characterCount; // Get # of Visible Character in text object
+            int counter = 0;
+            int visibleCount = 0;
 
             while (true)
             {
@@ -74,5 +78,6 @@ namespace TMPro.Examples
 
             //Debug.Log("Done revealing the text.");
         }
+
     }
 }

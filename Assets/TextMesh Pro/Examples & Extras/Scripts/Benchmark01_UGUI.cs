@@ -1,19 +1,26 @@
-using System.Collections;
 using UnityEngine;
+using System.Collections;
 using UnityEngine.UI;
+
 
 namespace TMPro.Examples
 {
+    
     public class Benchmark01_UGUI : MonoBehaviour
     {
-        private const string label01 = "The <#0050FF>count is: </color>";
-        private const string label02 = "The <color=#0050FF>count is: </color>";
 
-        public int BenchmarkType;
+        public int BenchmarkType = 0;
 
         public Canvas canvas;
         public TMP_FontAsset TMProFont;
         public Font TextMeshFont;
+
+        private TextMeshProUGUI m_textMeshPro;
+        //private TextContainer m_textContainer;
+        private Text m_textMesh;
+
+        private const string label01 = "The <#0050FF>count is: </color>";
+        private const string label02 = "The <color=#0050FF>count is: </color>";
 
         //private const string label01 = "TextMesh <#0050FF>Pro!</color>  The count is: {0}";
         //private const string label02 = "Text Mesh<color=#0050FF>        The count is: </color>";
@@ -22,17 +29,15 @@ namespace TMPro.Examples
         //private int m_frame;
 
         private Material m_material01;
-
         private Material m_material02;
 
-        //private TextContainer m_textContainer;
-        private Text m_textMesh;
-
-        private TextMeshProUGUI m_textMeshPro;
 
 
-        private IEnumerator Start()
+        IEnumerator Start()
         {
+
+
+
             if (BenchmarkType == 0) // TextMesh Pro Component
             {
                 m_textMeshPro = gameObject.AddComponent<TextMeshProUGUI>();
@@ -61,17 +66,24 @@ namespace TMPro.Examples
                 //m_textMeshPro.fontColor = new Color32(255, 255, 255, 255);
 
                 m_material01 = m_textMeshPro.font.material;
-                m_material02 =
-                    Resources.Load<Material>(
-                        "Fonts & Materials/LiberationSans SDF - BEVEL"); // Make sure the LiberationSans SDF exists before calling this...  
+                m_material02 = Resources.Load<Material>("Fonts & Materials/LiberationSans SDF - BEVEL"); // Make sure the LiberationSans SDF exists before calling this...  
+
+
             }
             else if (BenchmarkType == 1) // TextMesh
             {
                 m_textMesh = gameObject.AddComponent<Text>();
 
                 if (TextMeshFont != null)
+                {
                     m_textMesh.font = TextMeshFont;
-                //m_textMesh.renderer.sharedMaterial = m_textMesh.font.material;
+                    //m_textMesh.renderer.sharedMaterial = m_textMesh.font.material;
+                }
+                else
+                {
+                    //m_textMesh.font = Resources.Load("Fonts/ARIAL", typeof(Font)) as Font;
+                    //m_textMesh.renderer.sharedMaterial = m_textMesh.font.material;
+                }
 
                 m_textMesh.fontSize = 48;
                 m_textMesh.alignment = TextAnchor.MiddleCenter;
@@ -80,20 +92,20 @@ namespace TMPro.Examples
             }
 
 
-            for (var i = 0; i <= 1000000; i++)
+
+            for (int i = 0; i <= 1000000; i++)
             {
                 if (BenchmarkType == 0)
                 {
-                    m_textMeshPro.text = label01 + i % 1000;
+                    m_textMeshPro.text = label01 + (i % 1000);
                     if (i % 1000 == 999)
-                        m_textMeshPro.fontSharedMaterial = m_textMeshPro.fontSharedMaterial == m_material01
-                            ? m_textMeshPro.fontSharedMaterial = m_material02
-                            : m_textMeshPro.fontSharedMaterial = m_material01;
+                        m_textMeshPro.fontSharedMaterial = m_textMeshPro.fontSharedMaterial == m_material01 ? m_textMeshPro.fontSharedMaterial = m_material02 : m_textMeshPro.fontSharedMaterial = m_material01;
+
+
+
                 }
                 else if (BenchmarkType == 1)
-                {
-                    m_textMesh.text = label02 + i % 1000;
-                }
+                    m_textMesh.text = label02 + (i % 1000).ToString();
 
                 yield return null;
             }
@@ -119,4 +131,5 @@ namespace TMPro.Examples
         }
         */
     }
+
 }
