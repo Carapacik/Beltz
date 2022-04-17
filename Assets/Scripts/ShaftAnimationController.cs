@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class RotateShaft : MonoBehaviour
+public class ShaftAnimationController : MonoBehaviour
 {
     [SerializeField] private float rotation;
     [SerializeField] private GameObject belt;
