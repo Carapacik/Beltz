@@ -637,6 +637,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Victory
       objectReference: {fileID: 0}
+    - target: {fileID: 3338031591941854971, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
+      propertyPath: needToHide.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338031591941854971, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
+      propertyPath: needToHide.Array.data[0]
+      value: 
+      objectReference: {fileID: 984897188}
     - target: {fileID: 3338031593245846864, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

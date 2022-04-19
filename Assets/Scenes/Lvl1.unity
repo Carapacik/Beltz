@@ -1803,6 +1803,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Victory
       objectReference: {fileID: 0}
+    - target: {fileID: 3338031591941854971, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
+      propertyPath: needToHide.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338031591941854971, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
+      propertyPath: needToHide.Array.data[0]
+      value: 
+      objectReference: {fileID: 1733671630}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27c2bd5700f576947927f549ebca5377, type: 3}
 --- !u!1001 &6941278968805991357
