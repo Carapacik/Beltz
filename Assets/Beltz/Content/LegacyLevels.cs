@@ -1,0 +1,198 @@
+// Original sixteen level layouts preserved as engine-independent definitions.
+using Beltz.Core;
+namespace Beltz.Content { public static class LegacyLevels {
+public static LevelDefinition[] Create() => new LevelDefinition[] {
+new LevelDefinition("legacy-01", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(0.00000f, -2.70000f, false, false),
+new ShaftDef(0.00000f, 2.70000f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 1, false, true),
+}),
+new LevelDefinition("legacy-02", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(0.45274f, -2.70000f, true, false),
+new ShaftDef(1.85213f, 2.70000f, false, false),
+new ShaftDef(-1.85213f, -0.39512f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 2, true, true),
+new BeltDef(1, 2, false, true),
+}),
+new LevelDefinition("legacy-03", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(0.00000f, -2.34184f, false, false),
+new ShaftDef(2.70000f, 2.34184f, true, false),
+new ShaftDef(-2.70000f, 2.34184f, false, false),
+}, new BeltDef[] {
+new BeltDef(0, 1, false, true),
+new BeltDef(0, 2, false, true),
+new BeltDef(1, 2, false, true),
+}),
+new LevelDefinition("legacy-04", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(-1.81233f, 2.70000f, true, false),
+new ShaftDef(1.81233f, -2.70000f, false, false),
+new ShaftDef(-1.81233f, -2.70000f, true, false),
+new ShaftDef(1.81233f, 2.70000f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 2, true, true),
+new BeltDef(0, 3, false, true),
+new BeltDef(1, 2, false, true),
+new BeltDef(1, 3, true, true),
+}),
+new LevelDefinition("legacy-05", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(1.51145f, -0.03435f, false, false),
+new ShaftDef(1.18168f, -2.70000f, true, false),
+new ShaftDef(-1.51145f, 2.69313f, false, false),
+new ShaftDef(1.19542f, 2.70000f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 2, true, true),
+new BeltDef(0, 3, false, true),
+new BeltDef(0, 1, false, true),
+new BeltDef(2, 3, false, true),
+}),
+new LevelDefinition("legacy-06", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(-1.29847f, 2.69313f, false, false),
+new ShaftDef(1.39466f, -2.70000f, false, false),
+new ShaftDef(-1.72443f, -0.08931f, false, false),
+new ShaftDef(1.40840f, 2.70000f, true, false),
+new ShaftDef(1.72443f, -0.03435f, false, false),
+}, new BeltDef[] {
+new BeltDef(3, 4, false, true),
+new BeltDef(1, 4, false, true),
+new BeltDef(1, 2, true, true),
+new BeltDef(0, 4, true, true),
+new BeltDef(0, 3, false, true),
+}),
+new LevelDefinition("legacy-07", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(1.41199f, -2.70000f, true, false),
+new ShaftDef(1.78393f, 2.70000f, true, false),
+new ShaftDef(2.10077f, -0.04133f, true, false),
+new ShaftDef(-2.10077f, 0.22041f, false, false),
+new ShaftDef(-0.92985f, 2.69311f, true, false),
+new ShaftDef(-1.26046f, -2.21786f, false, false),
+}, new BeltDef[] {
+new BeltDef(2, 4, true, true),
+new BeltDef(3, 4, false, true),
+new BeltDef(2, 5, false, true),
+new BeltDef(0, 5, false, true),
+new BeltDef(1, 2, false, true),
+new BeltDef(1, 4, false, true),
+new BeltDef(0, 2, false, true),
+}),
+new LevelDefinition("legacy-08", GameMode.Belts, new ShaftDef[] {
+new ShaftDef(-0.84719f, 2.69311f, true, false),
+new ShaftDef(2.18342f, -0.04133f, true, false),
+new ShaftDef(-1.17781f, -2.21786f, true, false),
+new ShaftDef(-2.18342f, 0.31684f, true, false),
+new ShaftDef(1.86658f, 2.70000f, false, false),
+new ShaftDef(1.49464f, -2.70000f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 3, true, true),
+new BeltDef(0, 1, true, true),
+new BeltDef(1, 5, false, true),
+new BeltDef(1, 2, true, true),
+new BeltDef(2, 5, false, true),
+new BeltDef(1, 4, false, true),
+new BeltDef(0, 4, false, true),
+new BeltDef(2, 3, false, true),
+}),
+new LevelDefinition("legacy-09", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(-0.55543f, 2.70000f, true, false),
+new ShaftDef(1.60457f, 0.52457f, false, false),
+new ShaftDef(-1.60457f, -2.70000f, false, false),
+}, new BeltDef[] {
+new BeltDef(1, 2, true, true),
+new BeltDef(0, 1, false, true),
+}),
+new LevelDefinition("legacy-10", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(1.18625f, 0.64771f, false, false),
+new ShaftDef(1.18625f, -2.70000f, false, false),
+new ShaftDef(-0.85148f, 2.70000f, true, false),
+new ShaftDef(-1.18625f, -1.04070f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 3, false, true),
+new BeltDef(0, 2, false, true),
+new BeltDef(1, 3, false, true),
+}),
+new LevelDefinition("legacy-11", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(-2.70000f, -2.70000f, true, false),
+new ShaftDef(2.70000f, 2.70000f, false, false),
+new ShaftDef(-2.70000f, 2.70000f, true, false),
+new ShaftDef(2.70000f, -2.70000f, false, false),
+}, new BeltDef[] {
+new BeltDef(1, 2, false, true),
+new BeltDef(1, 3, false, true),
+new BeltDef(0, 3, false, true),
+new BeltDef(0, 2, false, true),
+}),
+new LevelDefinition("legacy-12", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(-1.64634f, -2.70000f, true, false),
+new ShaftDef(1.64634f, 0.59268f, false, false),
+new ShaftDef(0.90549f, 2.70000f, false, false),
+new ShaftDef(1.64634f, -2.70000f, false, false),
+new ShaftDef(-1.64634f, 0.59268f, true, false),
+}, new BeltDef[] {
+new BeltDef(0, 3, false, true),
+new BeltDef(0, 4, false, true),
+new BeltDef(2, 4, false, true),
+new BeltDef(1, 4, false, true),
+new BeltDef(1, 3, false, true),
+}),
+new LevelDefinition("legacy-13", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(-1.46441f, -2.70000f, false, false),
+new ShaftDef(-1.83051f, 0.32034f, true, false),
+new ShaftDef(0.00000f, 2.70000f, false, false),
+new ShaftDef(1.51017f, -2.68475f, true, false),
+new ShaftDef(1.83051f, 0.28983f, false, false),
+}, new BeltDef[] {
+new BeltDef(0, 1, false, true),
+new BeltDef(0, 3, false, true),
+new BeltDef(1, 2, false, true),
+new BeltDef(3, 4, true, true),
+new BeltDef(2, 4, true, true),
+}),
+new LevelDefinition("legacy-14", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(0.00000f, 2.70000f, true, false),
+new ShaftDef(1.05652f, -1.06719f, false, false),
+new ShaftDef(-0.29881f, -2.70000f, true, false),
+new ShaftDef(-1.04585f, -1.07787f, true, false),
+new ShaftDef(-1.28063f, 1.03518f, true, false),
+new ShaftDef(1.28063f, 1.01383f, false, false),
+}, new BeltDef[] {
+new BeltDef(3, 4, false, true),
+new BeltDef(1, 5, true, true),
+new BeltDef(0, 5, false, true),
+new BeltDef(0, 4, false, true),
+new BeltDef(1, 2, false, true),
+new BeltDef(1, 3, true, true),
+}),
+new LevelDefinition("legacy-15", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(1.35000f, 0.00000f, false, false),
+new ShaftDef(-1.35000f, -2.70000f, false, false),
+new ShaftDef(-1.35000f, 2.70000f, true, false),
+new ShaftDef(1.35000f, -2.70000f, false, false),
+new ShaftDef(-1.35000f, 0.00000f, true, false),
+new ShaftDef(1.35000f, 2.70000f, false, false),
+}, new BeltDef[] {
+new BeltDef(1, 4, false, true),
+new BeltDef(0, 4, false, true),
+new BeltDef(2, 5, false, true),
+new BeltDef(0, 5, false, true),
+new BeltDef(0, 3, true, true),
+new BeltDef(2, 4, false, true),
+}),
+new LevelDefinition("legacy-16", GameMode.Shafts, new ShaftDef[] {
+new ShaftDef(-1.35000f, -2.70000f, true, false),
+new ShaftDef(1.35000f, 2.70000f, false, false),
+new ShaftDef(1.35000f, 0.00000f, false, false),
+new ShaftDef(-1.35000f, 2.70000f, true, false),
+new ShaftDef(1.35000f, -2.70000f, false, false),
+new ShaftDef(-1.35000f, 0.00000f, true, false),
+}, new BeltDef[] {
+new BeltDef(2, 4, true, true),
+new BeltDef(0, 5, true, true),
+new BeltDef(0, 4, false, true),
+new BeltDef(1, 2, true, true),
+new BeltDef(0, 1, false, true),
+new BeltDef(1, 3, true, true),
+new BeltDef(3, 5, false, true),
+}),
+};
+} }

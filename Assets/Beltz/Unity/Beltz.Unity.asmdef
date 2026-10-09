@@ -1,0 +1,5 @@
+{
+  "name": "Beltz.Unity",
+  "rootNamespace": "Beltz.Unity",
+  "references": ["Beltz.Core", "Beltz.Content", "Unity.InputSystem", "Unity.ugui", "Unity.RenderPipelines.Universal.Runtime"]
+}

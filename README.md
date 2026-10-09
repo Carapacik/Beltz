@@ -1,14 +1,26 @@
 # Beltz
 
-<a href='https://play.google.com/store/apps/details?id=com.carapacik.beltz'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='90px'/></a>
+A puzzle game about pulleys and belts. Match every connection to set the machine in motion: open belts connect pulleys turning in the same direction; crossed belts connect opposite directions.
 
-### Hyper-casual 2d puzzle game
-The game is a system of *shafts* and *belts*. It is necessary to make sure that the belts are in the correct position, so that the shafts begin to spin.
+## Features
 
-There are 2 levels of **difficulty**:
-- EASY (belts are swiped by tap on the belt)
-- HARD (belts are swaped by tap on the shafts)
+- **120 levels across four sections.**
+- **Four rule sets:** switch belts, switch connected belts by tapping pulleys, reverse pulley directions, or combine both actions with locked elements.
+- **Progressive unlocks:** complete 10 levels in a section to unlock the next. Replay completed levels from the level browser.
+- **Interactive tutorials** for every section, with practice boards that run when solved.
+- **Procedural level generation** with verified solvability, adjustable difficulty and varied pulley positions, distances and connection counts.
+- **Hints, undo and restart.**
+- **Saved progress and session recovery.**
+- **Independent music and sound controls.**
+- **Glass interface** with animated controls and Montserrat 500/700 typography.
 
-The game has 2 **settings**: 
-- music switch
-- sound switch
+## Screenshots
+
+<p align="center">
+  <img src="Screenshots/home.png" width="45%" alt="Home">
+  <img src="Screenshots/level-2.png" width="45%" alt="Level 2">
+</p>
+<p align="center">
+  <img src="Screenshots/tutorial.png" width="45%" alt="Interactive tutorial">
+  <img src="Screenshots/levels.png" width="45%" alt="Levels">
+</p>

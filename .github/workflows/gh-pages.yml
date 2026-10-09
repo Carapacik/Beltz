@@ -1,0 +1,126 @@
+name: Deploy Beltz Web to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7.0.1
+
+      # Personal: UNITY_LICENSE is the .ulf file contents.
+      # Pro: use UNITY_SERIAL instead. Both require Unity account credentials.
+      - name: Check Unity activation secrets
+        shell: bash
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        run: |
+          if [[ -z "$UNITY_EMAIL" || -z "$UNITY_PASSWORD" ]]; then
+            echo "::error::Add UNITY_EMAIL and UNITY_PASSWORD in repository Actions secrets."
+            exit 1
+          fi
+          if [[ -z "$UNITY_LICENSE" && -z "$UNITY_SERIAL" ]]; then
+            echo "::error::Add UNITY_LICENSE (Personal .ulf contents) or UNITY_SERIAL (Pro) in repository Actions secrets."
+            exit 1
+          fi
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v6.0.0
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Check puzzle logic
+        run: dotnet run --project Tools/CoreChecks/CoreChecks.csproj --configuration Release
+
+      - name: Cache Unity imports
+        uses: actions/cache@v6.1.0
+        with:
+          path: Library
+          key: Unity-WebGL-${{ runner.os }}-${{ hashFiles('ProjectSettings/ProjectVersion.txt') }}-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
+          restore-keys: |
+            Unity-WebGL-${{ runner.os }}-${{ hashFiles('ProjectSettings/ProjectVersion.txt') }}-
+
+      - name: Prepare Unity build memory
+        shell: bash
+        run: |
+          dotnet build-server shutdown
+          sudo fallocate -l 8G /mnt/beltz-ci.swap
+          sudo chmod 600 /mnt/beltz-ci.swap
+          sudo mkswap /mnt/beltz-ci.swap
+          sudo swapon /mnt/beltz-ci.swap
+          free -h
+          df -h / /mnt
+
+      - name: Build Web release
+        uses: game-ci/unity-builder@v6.0.0
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+          UNITY_SERIAL: ${{ secrets.UNITY_SERIAL }}
+          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+        with:
+          unityVersion: auto
+          targetPlatform: WebGL
+          buildMethod: Beltz.Editor.ProjectSetup.BuildWebRelease
+          buildsPath: Builds
+          buildName: Web
+          versioning: None
+          # Leave RAM for the runner; swap absorbs short Unity/IL2CPP peaks.
+          dockerMemoryLimit: 12g
+          customParameters: -nographics -job-worker-count 2 -gc-helper-count 2
+
+      - name: Diagnose build memory failure
+        if: failure()
+        shell: bash
+        run: |
+          free -h
+          df -h / /mnt
+          sudo dmesg --ctime | grep -Ei 'out of memory|oom-kill|killed process' || true
+
+      - name: Check Pages artifact
+        shell: bash
+        run: |
+          test -s Builds/WebGL/Web/index.html
+          test -f Builds/WebGL/Web/.nojekyll
+          test -d Builds/WebGL/Web/Build
+          find Builds/WebGL/Web/Build -name '*.unityweb' -type f -print -quit | grep -q .
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: Builds/WebGL/Web
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v6.0.0
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1

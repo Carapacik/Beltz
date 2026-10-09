@@ -1,0 +1,1 @@
+{"name":"Beltz.Editor","rootNamespace":"Beltz.Editor","references":["Beltz.Core","Beltz.Content","Beltz.Unity"],"includePlatforms":["Editor"]}
